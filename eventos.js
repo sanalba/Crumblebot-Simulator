@@ -1218,6 +1218,11 @@ function eliminarBloques() {
 }
 
 function cerrarEdicionTexto() {
+  // Si hay un input abierto, NO cerrar
+  if (document.querySelector('input[type="text"]')) {
+    console.log('Input abierto, cancelando cierre');
+    return;
+  }
   textoTemporal=input.value();
   // Si estamos editando un bloque del escenario y no el nombre de una variable...
   if (!(bloqueEditando.categoria === 3 && bloqueEditando.id > 3)) {

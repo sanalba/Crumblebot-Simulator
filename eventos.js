@@ -65,9 +65,9 @@ function touchStarted() {
 
 function handleLeftClick(xMouse, yMouse) {
   if (!appLista) return;
-    pixel=get(xMouse,yMouse);
+  pixel=get(xMouse,yMouse);
   // Si hemos pinchado en la pantalla. Si había un bloque que se estaba editando se cierra.
-  if (bloqueEditando !== null && !colorPickerOpen) cerrarEdicionTexto();
+  //if (bloqueEditando !== null && !colorPickerOpen) cerrarEdicionTexto();
     pixel=get(xMouse,yMouse);
     //Si se pincha en el fondo blanco se comienza el paneado
     if (pixel[0] == 254 && pixel[1] == 254 && pixel[2] == 254) {
@@ -1293,7 +1293,6 @@ function cerrarEdicionTexto() {
   input.hide();
   // Desactiva el cuadro de texto activo
   bloqueEditando = null;
-  //textoTemporal = "";
   if (bloqueStartSeleccionado != null && bloqueStartSeleccionado != undefined && bloqueEjecutando!=bloqueStartSeleccionado) {
     alert(`Al modifcar los bloques el robot se ha reinicializado`);
     botonReiniciar();

@@ -492,7 +492,7 @@ function calculateLogicScale() {
   escalaBase = (windowWidth/LOGIC_WIDTH)*escalaDispositivo;
   calcularThumbnails();
   crearMenuSuperior();
-  if (bloqueEditando!=null) cerrarEdicionTexto();
+  //if (bloqueEditando!=null) cerrarEdicionTexto();
 }
 
 function windowResized() {

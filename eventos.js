@@ -65,7 +65,7 @@ function touchStarted() {
 
 function handleLeftClick(xMouse, yMouse) {
   if (!appLista) return;
-  pixel=get(xMouse,yMouse);
+    pixel=get(xMouse,yMouse);
   // Si hemos pinchado en la pantalla. Si había un bloque que se estaba editando se cierra.
   if (bloqueEditando !== null && !colorPickerOpen) cerrarEdicionTexto();
     pixel=get(xMouse,yMouse);
@@ -635,7 +635,7 @@ function handleLeftClick(xMouse, yMouse) {
             offsetX = bloqueSeleccionado.x - transformedX; // Distancia entre ratón y punto de referencia del subBloque
             offsetY = bloqueSeleccionado.y - transformedY;  
             // Cerramos el cuadro de texto si hubiera alguno activo
-            if (bloqueEditando != null) cerrarEdicionTexto();  
+            //if (bloqueEditando != null) cerrarEdicionTexto();  
             inicioDesplazarBloque = true;
             //Sirve para detectar si posteriormenete realmente se ha desplazado el bloque
             mouseOrigenX = xMouse;
@@ -1293,6 +1293,7 @@ function cerrarEdicionTexto() {
   input.hide();
   // Desactiva el cuadro de texto activo
   bloqueEditando = null;
+  //textoTemporal = "";
   if (bloqueStartSeleccionado != null && bloqueStartSeleccionado != undefined && bloqueEjecutando!=bloqueStartSeleccionado) {
     alert(`Al modifcar los bloques el robot se ha reinicializado`);
     botonReiniciar();

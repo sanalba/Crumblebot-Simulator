@@ -495,8 +495,7 @@ function calculateLogicScale() {
   if (bloqueEditando!=null) cerrarEdicionTexto();
 }
 
-function windowResized() {
-  return;
+/*function windowResized() {
   resizeCanvas(windowWidth, windowHeight- ALTURA_MENU);
   windowWidthActual=windowWidth;
   windowHeightActual=windowHeight;
@@ -504,7 +503,7 @@ function windowResized() {
   pixelDensity(1);
   calculateLogicScale();
   redraw();
-}
+}*/
 
 let primerPlay = false;
 function setup() {
@@ -521,7 +520,7 @@ function setup() {
    // PRIMERO crear el canvas y guardarlo
   p5Canvas = createCanvas(windowWidth, windowHeight - ALTURA_MENU);
   calculateLogicScale();
-  pixelDensity(displayDensity());
+  pixelDensity(1);
   // Deshabilitar menú contextual (usar p5Canvas.elt)
   p5Canvas.elt.addEventListener('contextmenu', function(event) {
     event.preventDefault();

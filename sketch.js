@@ -520,6 +520,7 @@ function setup() {
   osc.freq(440);     // frecuencia (La)
    // PRIMERO crear el canvas y guardarlo
   p5Canvas = createCanvas(windowWidth, windowHeight - ALTURA_MENU);
+  calculateLogicScale();
   pixelDensity(displayDensity());
   // Deshabilitar menú contextual (usar p5Canvas.elt)
   p5Canvas.elt.addEventListener('contextmenu', function(event) {

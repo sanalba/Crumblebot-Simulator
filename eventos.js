@@ -8,7 +8,7 @@ function mousePressed() {
   return false;
 }
 
-function touchStarted() {
+/*function touchStarted() {
   // Verificar si hay toques
   if (touches.length === 0) return true;
   
@@ -61,7 +61,7 @@ function touchStarted() {
   
   console.log('❌ Toque fuera del canvas');
   return true;
-}
+}*/
 
 function handleLeftClick(xMouse, yMouse) {
   if (!appLista) return;
@@ -1217,11 +1217,6 @@ function eliminarBloques() {
 }
 
 function cerrarEdicionTexto() {
-  // Si hay un input abierto, NO cerrar
-  if (document.querySelector('input[type="text"]')) {
-    console.log('Input abierto, cancelando cierre');
-    return;
-  }
   textoTemporal=input.value();
   // Si estamos editando un bloque del escenario y no el nombre de una variable...
   if (!(bloqueEditando.categoria === 3 && bloqueEditando.id > 3)) {

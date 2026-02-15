@@ -15,3 +15,98 @@ canvas {
     border: 2px solid #333;
     border-radius: 8px;
 }
+
+#menu-bar {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 4px 0;
+  z-index: 2000;
+}
+
+.menu-item {
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-item:hover {
+  background: #ecf0f1;
+}
+
+/* SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: #27ae60;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+#menu-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;           /* espacio entre logo y texto */
+  font-weight: 600;
+  color: var(--accent);
+  flex-shrink: 0;      /* Evita que se encoja */
+}
+
+#logo-menu {
+  height: calc(var(--altura-menu) - 10px); /* ajusta la altura al menú */
+  width: auto;
+  display: block;
+}
+
+body.loading {
+  cursor: wait;
+}

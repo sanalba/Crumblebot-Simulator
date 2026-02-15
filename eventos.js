@@ -8,7 +8,7 @@ function mousePressed() {
   return false;
 }
 
-function touchStarted() {
+/*function touchStarted() {
   // Verificar si hay toques
   if (touches.length === 0) return true;
   
@@ -61,12 +61,12 @@ function touchStarted() {
   
   console.log('❌ Toque fuera del canvas');
   return true;
-}
+}*/
 
 function handleLeftClick(xMouse, yMouse) {
   if (!appLista) return;
   // Si hemos pinchado en la pantalla. Si había un bloque que se estaba editando se cierra.
-  //if (bloqueEditando !== null && !colorPickerOpen) cerrarEdicionTexto();
+    if (bloqueEditando !== null && !colorPickerOpen) cerrarEdicionTexto();
     pixel=get(xMouse,yMouse);
     //Si se pincha en el fondo blanco se comienza el paneado
     if (pixel[0] == 254 && pixel[1] == 254 && pixel[2] == 254) {

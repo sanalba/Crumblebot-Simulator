@@ -8,7 +8,7 @@ function mousePressed() {
   return false;
 }
 
-/*function touchStarted() {
+function touchStarted() {
   // Verificar si hay toques
   if (touches.length === 0) return true;
   
@@ -61,7 +61,7 @@ function mousePressed() {
   
   console.log('❌ Toque fuera del canvas');
   return true;
-}*/
+}
 
 function handleLeftClick(xMouse, yMouse) {
   if (!appLista) return;

@@ -8,7 +8,7 @@ function mousePressed() {
   return false;
 }
 
-function touchStarted() {
+/*function touchStarted() {
   // Verificar si hay toques
   if (touches.length === 0) return true;
   
@@ -61,13 +61,13 @@ function touchStarted() {
   
   console.log('❌ Toque fuera del canvas');
   return true;
-}
+}*/
 
 function handleLeftClick(xMouse, yMouse) {
   if (!appLista) return;
   pixel=get(xMouse,yMouse);
   // Si hemos pinchado en la pantalla. Si había un bloque que se estaba editando se cierra.
-  //if (bloqueEditando !== null && !colorPickerOpen) cerrarEdicionTexto();
+  if (bloqueEditando !== null && !colorPickerOpen) cerrarEdicionTexto();
     pixel=get(xMouse,yMouse);
     //Si se pincha en el fondo blanco se comienza el paneado
     if (pixel[0] == 254 && pixel[1] == 254 && pixel[2] == 254) {
@@ -635,7 +635,7 @@ function handleLeftClick(xMouse, yMouse) {
             offsetX = bloqueSeleccionado.x - transformedX; // Distancia entre ratón y punto de referencia del subBloque
             offsetY = bloqueSeleccionado.y - transformedY;  
             // Cerramos el cuadro de texto si hubiera alguno activo
-            //if (bloqueEditando != null) cerrarEdicionTexto();  
+            if (bloqueEditando != null) cerrarEdicionTexto();  
             inicioDesplazarBloque = true;
             //Sirve para detectar si posteriormenete realmente se ha desplazado el bloque
             mouseOrigenX = xMouse;

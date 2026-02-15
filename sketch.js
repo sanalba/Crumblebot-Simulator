@@ -496,11 +496,7 @@ function calculateLogicScale() {
 }
 
 function windowResized() {
-    // Si hay un input abierto, ignorar el resize (viene del teclado)
-  if (document.querySelector('input[type="text"]')) {
-    console.log('Input abierto, ignorando resize');
-    return;
-  }
+  return;
   resizeCanvas(windowWidth, windowHeight- ALTURA_MENU);
   windowWidthActual=windowWidth;
   windowHeightActual=windowHeight;

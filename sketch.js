@@ -495,7 +495,7 @@ function calculateLogicScale() {
   if (bloqueEditando!=null) cerrarEdicionTexto();
 }
 
-/*function windowResized() {
+function windowResized() {
   resizeCanvas(windowWidth, windowHeight- ALTURA_MENU);
   windowWidthActual=windowWidth;
   windowHeightActual=windowHeight;
@@ -503,7 +503,7 @@ function calculateLogicScale() {
   pixelDensity(1);
   calculateLogicScale();
   redraw();
-}*/
+}
 
 let primerPlay = false;
 function setup() {

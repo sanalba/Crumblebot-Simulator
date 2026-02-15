@@ -1,1 +1,1966 @@
-const a0_0x25aed9=a0_0x3147;(function(_0x4577e0,_0x55fc5f){const _0x208566=a0_0x3147,_0x201b00=_0x4577e0();while(!![]){try{const _0x31b38d=-parseInt(_0x208566(0x1db))/0x1*(-parseInt(_0x208566(0x1d3))/0x2)+parseInt(_0x208566(0x1ac))/0x3+parseInt(_0x208566(0x1b5))/0x4*(parseInt(_0x208566(0x27a))/0x5)+parseInt(_0x208566(0x2a5))/0x6+-parseInt(_0x208566(0x2fc))/0x7+-parseInt(_0x208566(0x249))/0x8*(-parseInt(_0x208566(0x20d))/0x9)+parseInt(_0x208566(0x2dc))/0xa*(-parseInt(_0x208566(0x2e5))/0xb);if(_0x31b38d===_0x55fc5f)break;else _0x201b00['push'](_0x201b00['shift']());}catch(_0x233c76){_0x201b00['push'](_0x201b00['shift']());}}}(a0_0x6a98,0xa05ca));let nombreArchivoActual=a0_0x25aed9(0x2c6),abiertoCrumble=![],ultimoArchivoAza=null,ultimoArchivoCrm=null,numBotones=0x8,boton=[],xBoton=[],yBoton=[],xBloqueCategoria=[],yBloqueCategoria=[];const BOTON_MENU=[[a0_0x25aed9(0x2d9),'o','_\x20Input/Output\x20'],[a0_0x25aed9(0x1ff),'o',a0_0x25aed9(0x19a)],[a0_0x25aed9(0x27b),'o',a0_0x25aed9(0x208)],['VariablesButton','o',a0_0x25aed9(0x1f5)],[a0_0x25aed9(0x22f),'o',a0_0x25aed9(0x1b0)],['SmartButton','o',a0_0x25aed9(0x2fd)]],BOTON_DEL=[a0_0x25aed9(0x1a5),'o','_\x20X\x20'],BOTON_RENAME=[a0_0x25aed9(0x1e0),'o',a0_0x25aed9(0x1dd)],BOTON_ZOOM_MAS=[a0_0x25aed9(0x18f),'o','_+'],BOTON_ZOOM_MENOS=['BotonZomm-','o','_-'],BOTON_VARIABLE=[a0_0x25aed9(0x1d9),'o',a0_0x25aed9(0x1d8)],ANCHO_BOTON=0x18,LISTA=[['A','B','C','D','','','','','','','',''],['HI','LO','','','','','','','','','',''],['1','2','','','','','','','','','',''],[a0_0x25aed9(0x279),a0_0x25aed9(0x2ee),a0_0x25aed9(0x285),'','','','','','','','',''],['270º',a0_0x25aed9(0x24a),'','','','','','','','','',''],['MIDDLE',a0_0x25aed9(0x1ad),a0_0x25aed9(0x1c6),a0_0x25aed9(0x259),a0_0x25aed9(0x21b),'','','','','','',''],['C','C#/Db','D',a0_0x25aed9(0x248),'E','F','F#/Gb','G',a0_0x25aed9(0x1c2),'A',a0_0x25aed9(0x23c),'B']],NOTACION_CRUMBLE=[[[a0_0x25aed9(0x24d)],[a0_0x25aed9(0x1c9),'pin',a0_0x25aed9(0x25f)],[a0_0x25aed9(0x29d),a0_0x25aed9(0x219),a0_0x25aed9(0x250),a0_0x25aed9(0x2b1)],[a0_0x25aed9(0x1a1),'pin',a0_0x25aed9(0x25f)],['AnalogueInput',a0_0x25aed9(0x19b)],[a0_0x25aed9(0x232),'pin','angle'],[a0_0x25aed9(0x1fb),a0_0x25aed9(0x19b),a0_0x25aed9(0x2bc),'type'],[a0_0x25aed9(0x1b3),a0_0x25aed9(0x19b)],[a0_0x25aed9(0x2da),a0_0x25aed9(0x233),'echo']],[[a0_0x25aed9(0x2bb),a0_0x25aed9(0x2a4),a0_0x25aed9(0x1be)],[a0_0x25aed9(0x205),'address'],['SetAllSpraklesBlock',a0_0x25aed9(0x1be)],[a0_0x25aed9(0x2d1)],[a0_0x25aed9(0x293),'address',a0_0x25aed9(0x2f8),a0_0x25aed9(0x277),'blue'],[a0_0x25aed9(0x287),a0_0x25aed9(0x2f8),a0_0x25aed9(0x277),a0_0x25aed9(0x1ca)],[a0_0x25aed9(0x2ef),a0_0x25aed9(0x1e8),a0_0x25aed9(0x251),'colour1',a0_0x25aed9(0x1df),a0_0x25aed9(0x198),a0_0x25aed9(0x190),a0_0x25aed9(0x29a),a0_0x25aed9(0x2bf),'colour7'],[a0_0x25aed9(0x29c),a0_0x25aed9(0x1e8),'colour0',a0_0x25aed9(0x246),a0_0x25aed9(0x1df),a0_0x25aed9(0x198),a0_0x25aed9(0x190),'colour5',a0_0x25aed9(0x2bf),'colour7',a0_0x25aed9(0x1ef),'colour9',a0_0x25aed9(0x29e),a0_0x25aed9(0x28a),a0_0x25aed9(0x2f4),a0_0x25aed9(0x20c),'colour14',a0_0x25aed9(0x2e1),a0_0x25aed9(0x2b0),a0_0x25aed9(0x1a7),a0_0x25aed9(0x243),'colour19',a0_0x25aed9(0x1e4),'colour21',a0_0x25aed9(0x25b),a0_0x25aed9(0x1f3),'colour24']],[['WaitBlock','time'],[a0_0x25aed9(0x2db),'time'],[a0_0x25aed9(0x218),a0_0x25aed9(0x23f)],[a0_0x25aed9(0x2e2),a0_0x25aed9(0x23f)],['IfElseBlock',a0_0x25aed9(0x23f)],[],[a0_0x25aed9(0x1b8),a0_0x25aed9(0x23f)],[a0_0x25aed9(0x1d2),a0_0x25aed9(0x23f)],[a0_0x25aed9(0x21a),a0_0x25aed9(0x210)]],[['AssignmentBlock','larg',a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x2af),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x271),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)]],[[a0_0x25aed9(0x1f4),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],['SubBlock',a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x1a2),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],['DivideBlock',a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x2c8),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x239),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],['LessThanBlock',a0_0x25aed9(0x1c8),'rarg'],['GreaterThanBlock',a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x261),'larg',a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x2b9),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x2be),a0_0x25aed9(0x1c8),a0_0x25aed9(0x1cf)],[a0_0x25aed9(0x2cc),a0_0x25aed9(0x1fc),a0_0x25aed9(0x1ba)]],[[a0_0x25aed9(0x2b6),'pin',a0_0x25aed9(0x1a4)],['SmartDigitsOffBlock',a0_0x25aed9(0x19b)],[a0_0x25aed9(0x241),a0_0x25aed9(0x19b)],[a0_0x25aed9(0x224),a0_0x25aed9(0x19b),a0_0x25aed9(0x1a4)],[a0_0x25aed9(0x2ba),'pin'],[a0_0x25aed9(0x19c),a0_0x25aed9(0x19b),a0_0x25aed9(0x257),a0_0x25aed9(0x200),'length'],[a0_0x25aed9(0x2d5),a0_0x25aed9(0x2e9)],[a0_0x25aed9(0x23e),a0_0x25aed9(0x19b)],['SmartForceBlock',a0_0x25aed9(0x19b)]]],t=[[[a0_0x25aed9(0x24d),'_',a0_0x25aed9(0x2d3)],[a0_0x25aed9(0x1c9),'_',a0_0x25aed9(0x265),'0A','_',a0_0x25aed9(0x2ab),'_'],['MotorBlock','_',a0_0x25aed9(0x2fa),'21','_',a0_0x25aed9(0x1e7),a0_0x25aed9(0x272),a0_0x25aed9(0x2f9),'_%'],[a0_0x25aed9(0x1a1),'h','_','0A',a0_0x25aed9(0x1e3),a0_0x25aed9(0x2ab),'_'],[a0_0x25aed9(0x2ce),'o',a0_0x25aed9(0x235),'0A','_'],['ServoBlock','_',a0_0x25aed9(0x2c3),'0A','_','o0',a0_0x25aed9(0x295)],[a0_0x25aed9(0x1fb),'_',a0_0x25aed9(0x2c3),'0A','_','o0',a0_0x25aed9(0x20a),a0_0x25aed9(0x1cd),'_'],[a0_0x25aed9(0x1b3),'_','_servo','0A',a0_0x25aed9(0x1d4)],[a0_0x25aed9(0x2da),'o',a0_0x25aed9(0x1c4),'0A',a0_0x25aed9(0x2e8),'0A','_']],[[a0_0x25aed9(0x2bb),'_',a0_0x25aed9(0x298),'o0',a0_0x25aed9(0x1e6),a0_0x25aed9(0x226),'_'],['TurnSprakleOffBlock','_',a0_0x25aed9(0x230),'o0',a0_0x25aed9(0x194)],[a0_0x25aed9(0x280),'_','_set\x20all\x20sparkles\x20to',a0_0x25aed9(0x226),'_'],[a0_0x25aed9(0x2d1),'_',a0_0x25aed9(0x1ab)],[a0_0x25aed9(0x293),'_',a0_0x25aed9(0x265),'o0',a0_0x25aed9(0x1e6),'o0','_','o0','_','o0','_'],['SetAllSparklesRGBBlock','_','_set\x20all\x20sparkles\x20to','o0','_','o0','_','o0','_'],[a0_0x25aed9(0x2ef),'_','_set\x20baton\x20',a0_0x25aed9(0x226),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),'*#000000',a0_0x25aed9(0x2a9)],[a0_0x25aed9(0x29c),'_',a0_0x25aed9(0x1f2),a0_0x25aed9(0x226),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),'*#000000',a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),'*#000000',a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),'*#000000',a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),'*#000000',a0_0x25aed9(0x2a9),'*#000000',a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),'*#000000','*#000000',a0_0x25aed9(0x2a9),'*#000000',a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9),a0_0x25aed9(0x2a9)]],[['WaitBlock','_','_wait','o1.0',a0_0x25aed9(0x221)],[a0_0x25aed9(0x2db),'_',a0_0x25aed9(0x26a),a0_0x25aed9(0x24b),a0_0x25aed9(0x1e1)],[a0_0x25aed9(0x218),'_',a0_0x25aed9(0x29b),a0_0x25aed9(0x2a8),'_'],[a0_0x25aed9(0x2e2),'_','_if','h',a0_0x25aed9(0x291)],['IfElseBlock','_','_if','h',a0_0x25aed9(0x291)],['ElseBlock','_',a0_0x25aed9(0x2ca)],['DoUntilBlock','_',a0_0x25aed9(0x1e5),'h','_'],[a0_0x25aed9(0x1d2),'_','_do\x20forever'],[a0_0x25aed9(0x21a),'_','_do',a0_0x25aed9(0x1d6),a0_0x25aed9(0x1e2)]],[[a0_0x25aed9(0x2d4),'_',a0_0x25aed9(0x2b2),'o','_=','o0','_'],['IncreaseBlock','_','_increase','o',a0_0x25aed9(0x23d),'o1','_'],[a0_0x25aed9(0x271),'_','_decrease','o',a0_0x25aed9(0x23d),'o1','_'],[a0_0x25aed9(0x2eb),'o',a0_0x25aed9(0x1a3)]],[[a0_0x25aed9(0x1f4),'o','_','o0','_+','o0','_'],[a0_0x25aed9(0x254),'o','_','o0','_-','o0','_'],[a0_0x25aed9(0x1a2),'o','_','o0','_*','o0','_'],[a0_0x25aed9(0x195),'o','_','o0','_/','o0','_'],[a0_0x25aed9(0x2c8),'h','_','o0','_=','o0','_'],[a0_0x25aed9(0x239),'h','_','o0','_≠','o0','_'],[a0_0x25aed9(0x26d),'h','_','o0','_<','o0','_'],[a0_0x25aed9(0x2f5),'h','_','o0','_>','o0','_'],[a0_0x25aed9(0x261),'h','_','h0',a0_0x25aed9(0x1c3),'h0','_'],[a0_0x25aed9(0x2b9),'h','_','h0',a0_0x25aed9(0x245),'h0','_'],[a0_0x25aed9(0x2be),'h','_\x20not','h','_'],['RandomBlock','o','_\x20random','o0','_to',a0_0x25aed9(0x1d6),'_']],[[a0_0x25aed9(0x2b6),'_',a0_0x25aed9(0x2bd),'0A',a0_0x25aed9(0x1d0),'o0','_\x20'],[a0_0x25aed9(0x28f),'_',a0_0x25aed9(0x2bd),'0A','_:\x20turn\x20off'],[a0_0x25aed9(0x241),'_',a0_0x25aed9(0x1f0),'0A',a0_0x25aed9(0x213)],['SmartPitchBlock','_',a0_0x25aed9(0x240),'0A','_:\x20play',a0_0x25aed9(0x1f8),a0_0x25aed9(0x21f)],['SmartPitchOffBlock','_',a0_0x25aed9(0x240),'0A','_:\x20turn\x20off'],[a0_0x25aed9(0x19c),'_',a0_0x25aed9(0x240),'0A',a0_0x25aed9(0x21c),a0_0x25aed9(0x1c7),'_','6C','_\x20for','o1','_\x20beats']]],numCategorias=t[a0_0x25aed9(0x26f)];let LOGIC_WIDTH,LOGIC_HEIGHT,orientacionActual,windowWidthActual,windowHeightActual,escalaDispositivo=0x1;menu=0x0,modo=0x5;let estaAbierto,Font1,grosorFont,offsetX,offsetY,transformedX,transformedY,transformedXbasico,transformedYbasico,mouseOrigenX,mouseOrigenY,codigo=[],codigoMenu=[],codigoCategoria=[],botonesVariables=[],bloquesSeleccionados=[],grosorBloquesSeleccionados,bloquesNoSeleccionados=[],bloquesVirtuales=[],codigoVariables=[],botonCrearVariable,bloquesStart=[],bloqueStartSeleccionado,bloqueEjecutando,numBloques=[],colorBloq=[],desplegableBloque=![],bloqueSeleccionado=null;const SEPARACION_BLOQUES_MENU=0x8;let seleccion=null,seleccion2=null,seleccion3=null,seleccion4=null,seleccionSubBloque,xFlecha,yFlecha,xDesplegable,yDesplegable,inicioDesplazarBloque=![];const BORDE_MENU=0x5,ALTO_MENU_SUPERIOR=0x23;let anchoMenu=[],altoMenu=[],anchoRect=0x0,panningMenuBloques=![],panMenuBloquesY=0x0,panStartMenuBloquesY=0x0;const ALTO_COMIENZO_BLOQUES=0x6e;let input,panCodigoX=0x0,panCodigoY=0x0,panningCodigo=![],panStartCodigoX=0x0,panStartCodigoY=0x0,zoomCodigo=0x1,panSimulacionX=0x0,panSimulacionY=0x0,panStartSimulacionX=0x0,panStartSimulacionY=0x0,panningSimulacion=![],zoomSimulacion=0.5,panConfiguracionX=0x0,panConfiguracionY=0x0,panningConfiguracion=![],panStartConfiguracionX=0x0,panStartConfiguracionY=0x0,zoomConfiguracion=0.75;const Engine=Matter['Engine'],World=Matter['World'],Bodies=Matter[a0_0x25aed9(0x1f1)],Body=Matter[a0_0x25aed9(0x282)],Vertices=Matter['Vertices'],Composite=Matter[a0_0x25aed9(0x244)];let engine,world,robot,fisicaActiva=!![],p5Canvas,fondo,nombreFondo='',anchoTapete=0x93a,altoTapete=0x477,anchoMundo=0x1f40,altoMundo=0x1f40,desplazandoRobot=![],robotSeleccionado=![],robotPequeño,robotPequeñoUltrasonidos,robotGrande,robotVisible=!![];const LARGO_IMAGEN_ROBOT=0x101,ANCHO_IMAGEN_ROBOT=0xa4,ANCHO_ROBOT=0x285,ALTO_ROBOT=0x258;let CrumX,CrumY,CrumblebotAnteriorX=0x0,CrumblebotAnteriorY=0x0;const MAX_SPEED=0x1388,MAX_WHEEL_SPEED=0x1f4;let jumpers=[],jumperSeleccionado=null,conector=[],conectorSeleccionado=null,conectorGPIO=[],gpio=[],elemento=[],letraGPIO=[],letrasGPIOs=['A','B','C','D'],nomenclaturaElementos=[],obstaculo=[],laterales=[],lateralesVisibles=!![],obstaculoInicio=[],obstaculoDesplazando=null,obstaculoSeleccionado=null,offsetAngulo=0x0,anguloInicial=0x0,transformedObstaculoX=0x0,transformedObstaculoY=0x0,RectX,rectY,ultrasonic;const ANCHO_ULTRASONIC=0xc8,ALTO_ULTRASONIC=0x69;let ULTRASONIC_X=0x0,ULTRASONIC_Y=0x0,ultrasonidos;const ANCHO_ULTRASONIDOS=0x14a,ALTO_ULTRASONIDOS=0x4c;let ULTRASONIDOS_X=0x0,ULTRASONIDOS_Y=0x0,radio=0x0,ruidoTiempo=0x0;const ruidoVelocidad=0.05,ruidoIntensidad=0x18;let anguloOnda=0x0;const DIST_SENSOR_BN=436.68*0x96/0x24e,ANGULO_SENSOR_BN=0.221,DIST_LDR=506.41*0x96/0x24e,ANGULO_LDR=0.489;let colorLED=new Array(0x8),ledsActivos=0x0,isBeeping=![],bulb,anchoBulb=0x0,altoBulb=0x0,light,bulbX=0x0,bulbY=0x0,desplazandoBulb=![],ejecutando=![],inicio=0x0,miliSegundos=0x0,esperarUnCiclo=![],saltoIfElse=![],movidoDuranteEjecucion=![],inicioCrono=0x0,Crono=0x0,Distancia=0x0,x=0x0,y=0x0,desplazandoVentanaColor=![],currentColor,colorPickerOpen=![],customColorActivo=![],BASIC_COLOR=[],BASIC_COLORSeleccionado=0x0,customColorSeleccionado=0x0,HSLimage;const PICKER_X=0xdc,PICKER_Y=0xc8,ANCHO_PICKER=0xb4,ALTO_PICKER=0xb4,ANCHO_MARCO=PICKER_X+ANCHO_PICKER+0x1e,ALTO_MARCO=0x136;function a0_0x3147(_0x552230,_0x2c5732){_0x552230=_0x552230-0x18f;const _0x6a981=a0_0x6a98();let _0x3147fd=_0x6a981[_0x552230];return _0x3147fd;}let hue=0x0,saturation=0x0,brightness=0x0,customColor=new Array(0x10),rgbInputs=[],hsbInputs=[],mouseColorX=0x0,mouseColorY=0x0,thumbnails=[],anchoThumbnail=0x0,altoThumbnail=0x0,imageFiles=[],imageNames=[],xPos=[],yPos=[],offsetYBarra=0x0,xPosStart=0x0,indiceTapeteSeleccionado=0x0,draggingScrollBar=![],dragStartY=0x0,scrollBarY=0x0,scrollBarHeight=0x0,totalThumbnailsHeight=0x0,inicioMensaje=0x0,mensaje='',bloqueEditando=null,subBloqueEditando=0x0,maximoCaracteres=0x0,textoTemporal='',bufferEfectos,bufferMenuSuperior,escalaBase=calcularEscala(),osc,inc,cont=0x0;thumbnailsPorFila=0x4,espacioEntreThumbs=0x14,anchoThumbnail=0x96,altoThumbnail=0x96;let archivosSVG=['ángulos.svg',a0_0x25aed9(0x2d6),'óvalo.svg',a0_0x25aed9(0x275),'rayas2.svg',a0_0x25aed9(0x20e),a0_0x25aed9(0x1ec),a0_0x25aed9(0x19d)],resultadoSeleccion,logoPath=a0_0x25aed9(0x1b7);function preload(){const _0x4367b8=a0_0x25aed9;Matter=window['Matter'],robotGrande=loadImage('assets/images/CrumblebotXL.png'),robotPequeño=loadImage('assets/images/CrumblebotXLIcono.png'),robotPequeñoUltrasonidos=loadImage(_0x4367b8(0x1bf)),ultrasonidos=loadImage(_0x4367b8(0x281)),ultrasonic=loadImage(_0x4367b8(0x2d7)),bulb=loadImage(_0x4367b8(0x1b6)),HSLimage=loadImage('assets/images/HSL.png'),boton=new Array(numBotones);for(let _0x211ba3=0x0;_0x211ba3<numBotones;_0x211ba3++){boton[_0x211ba3]=loadImage(_0x4367b8(0x1bc)+_0x211ba3+_0x4367b8(0x2dd));}cargarTapetes();}let cargadas=0x0;function cargarTapetes(){const _0x3e9f7f=a0_0x25aed9;thumbnails=new Array(archivosSVG['length']),cargadas=0x0;for(let _0x188080=0x0;_0x188080<archivosSVG['length'];_0x188080++){let _0x1e0a3a=archivosSVG[_0x188080];loadImage(_0x3e9f7f(0x247)+_0x1e0a3a,_0x234bc6=>{const _0x33006e=_0x3e9f7f;let _0x22583b=_0x234bc6[_0x33006e(0x25d)]();_0x22583b[_0x33006e(0x1f7)](0x96,0x96),thumbnails[_0x188080]=_0x22583b,cargadas++,cargadas===archivosSVG[_0x33006e(0x26f)]&&calcularThumbnails();});}indiceTapeteSeleccionado=-0x1,offsetYBarra=0x0;}function calculateLogicScale(){escalaBase=windowWidth/LOGIC_WIDTH*escalaDispositivo,calcularThumbnails(),crearMenuSuperior();if(bloqueEditando!=null)cerrarEdicionTexto();}function windowResized(){resizeCanvas(windowWidth,windowHeight-ALTURA_MENU),windowWidthActual=windowWidth,windowHeightActual=windowHeight,pixelDensity(0x1),calculateLogicScale(),redraw();}let primerPlay=![];function setup(){const _0x3a9561=a0_0x25aed9;document['body']['classList'][_0x3a9561(0x2df)](_0x3a9561(0x266)),appLista=![],crearMenuHTML(),bufferMenuSuperior=createGraphics(windowWidth,ALTO_MENU_SUPERIOR),bufferMenuSuperior['colorMode'](RGB,0xff),osc=new p5[(_0x3a9561(0x2a3))]('sine'),osc[_0x3a9561(0x24e)](0x0),osc[_0x3a9561(0x255)](0x1b8),p5Canvas=createCanvas(windowWidth,windowHeight-ALTURA_MENU),pixelDensity(displayDensity()),p5Canvas['elt'][_0x3a9561(0x192)](_0x3a9561(0x2ae),function(_0x39fbee){return _0x39fbee['preventDefault'](),![];}),deshabilitarGestosMóviles(),p5Canvas[_0x3a9561(0x231)][_0x3a9561(0x192)]('mousedown',()=>{cerrarMenus();}),LOGIC_WIDTH=windowWidth,LOGIC_HEIGHT=windowHeight-0x32,calculateLogicScale(),smooth(0x8),engine=Engine[_0x3a9561(0x1cb)](),world=engine[_0x3a9561(0x22a)],world[_0x3a9561(0x228)]['y']=0x0,Matter[_0x3a9561(0x223)][_0x3a9561(0x2b7)](decomp),input=createInput(),input[_0x3a9561(0x2fb)](_0x3a9561(0x209),_0x3a9561(0x1de)),input['style'](_0x3a9561(0x2ea),_0x3a9561(0x216)),input[_0x3a9561(0x2fb)](_0x3a9561(0x1d5),'10'),input[_0x3a9561(0x2fb)]('outline',_0x3a9561(0x299));for(let _0x1b6826=0x0;_0x1b6826<0x8;_0x1b6826++){colorLED[_0x1b6826]=null;}let _0x40e8d7=-46.5,_0x37fcdf=new Array(0x8),_0x5c40fb=new Array(0x8);inc=0x0;for(let _0x432f78=0x0;_0x432f78<0x9;_0x432f78++){_0x40e8d7-=8.7;if(_0x432f78==0x4)inc=-0x1;else _0x37fcdf[_0x432f78+inc]=0x16d*cos(radians(_0x40e8d7)),_0x5c40fb[_0x432f78+inc]=0x50+0x16d*sin(radians(_0x40e8d7));}_0x40e8d7=0x2b;let _0x183847=new Array(0x8),_0x5d6ad0=new Array(0x8);inc=0x0;for(let _0x1d9f60=0x0;_0x1d9f60<0x9;_0x1d9f60++){_0x40e8d7-=8.6;if(_0x1d9f60==0x4)inc=-0x1;else _0x183847[_0x1d9f60+inc]=0x1e+0x5f*cos(radians(_0x40e8d7)),_0x5d6ad0[_0x1d9f60+inc]=0x5f*sin(radians(_0x40e8d7));}robot=new Robot(0x0,0x0,_0x37fcdf,_0x5c40fb),robotFisico=new DifferentialRobot(0x0,0x0,0x108,0x9a,_0x183847,_0x5d6ad0),Composite[_0x3a9561(0x2df)](world,robotFisico[_0x3a9561(0x28d)]),colorBloq=[color(0x0,0x7a,0xff),color(0x58,0x56,0xd6),color(0xff,0x95,0x0),color(0xc8,0x6e,0xdf),color(0x4c,0xd9,0x64),color(0x10,0xa0,0xa0)],textFont('Arial'),numBloques=new Array(numCategorias),colorBloq=new Array(0x8),colorBloq[0x0]=color(0x0,0x7a,0xff),colorBloq[0x1]=color(0x58,0x56,0xd6),colorBloq[0x2]=color(0xff,0x95,0x0),colorBloq[0x3]=color(0xc8,0x6e,0xdf),colorBloq[0x4]=color(0x4c,0xd9,0x64),colorBloq[0x5]=color(0x10,0xa0,0xa0),anchoMenu=new Array(numCategorias),altoMenu=new Array(numCategorias),obstaculo=[],obstaculoInicio=[];fondo!=null&&fondo!=undefined&&(anchoTapete=fondo[_0x3a9561(0x21d)],altoTapete=fondo[_0x3a9561(0x267)]);laterales[_0x3a9561(0x1f9)](new Obstaculo(0x0,-altoTapete/0x2-0xa,anchoTapete+0x28,0x14,0x0,!![])),laterales[_0x3a9561(0x1f9)](new Obstaculo(0x0,altoTapete/0x2+0xa,anchoTapete+0x28,0x14,0x0,!![])),laterales[_0x3a9561(0x1f9)](new Obstaculo(-anchoTapete/0x2-0xa,0x0,0x14,altoTapete,0x0,!![])),laterales[_0x3a9561(0x1f9)](new Obstaculo(anchoTapete/0x2+0xa,0x0,0x14,altoTapete,0x0,!![])),ULTRASONIC_X=-ANCHO_ROBOT/0x2-ANCHO_ULTRASONIC/0x2,ULTRASONIC_Y=0x32-ALTO_ROBOT/0x2,ULTRASONIDOS_X=0x0,ULTRASONIDOS_Y=-ALTO_ROBOT/0x2+0x55;for(let _0x35d7e1=0x0;_0x35d7e1<t[_0x3a9561(0x26f)];_0x35d7e1++){numBloques[_0x35d7e1]=t[_0x35d7e1]['length'];}anchoBulb=0x32,altoBulb=0x3b,BASIC_COLOR=[color(0xff,0x80,0x80),color(0xff,0xff,0x80),color(0x80,0xff,0x80),color(0x0,0xff,0x80),color(0x80,0xff,0xff),color(0x0,0x80,0xff),color(0xff,0x80,0xc0),color(0xff,0x80,0xff),color(0xff,0x0,0x0),color(0xff,0xff,0x0),color(0x80,0xff,0x0),color(0x0,0xff,0x40),color(0x0,0xff,0xff),color(0x0,0x80,0xc0),color(0x80,0x80,0xc0),color(0xff,0x0,0xff),color(0x80,0x40,0x40),color(0xff,0x80,0x40),color(0x0,0xff,0x0),color(0x0,0x80,0x80),color(0x0,0x40,0x80),color(0x80,0x80,0xff),color(0x80,0x0,0x40),color(0xff,0x0,0x80),color(0x80,0x0,0x0),color(0xff,0x80,0x0),color(0x0,0x80,0x0),color(0x0,0x80,0x40),color(0x0,0x0,0xff),color(0x0,0x0,0xa0),color(0x80,0x0,0x80),color(0x80,0x0,0xff),color(0x40,0x0,0x0),color(0x80,0x40,0x0),color(0x0,0x40,0x0),color(0x0,0x40,0x40),color(0x0,0x0,0x80),color(0x0,0x0,0x40),color(0x40,0x0,0x40),color(0x40,0x0,0x80),color(0x0,0x0,0x0),color(0x80,0x80,0x0),color(0x80,0x80,0x40),color(0x80,0x80,0x80),color(0x40,0x80,0x80),color(0xc0,0xc0,0xc0),color(0x40,0x0,0x40),color(0xff,0xff,0xff)],BASIC_COLORSeleccionado=0x30,customColorSeleccionado=0x10,hue=0x78,saturation=0x78,brightness=0x78,rgbInputs=[_0x3a9561(0x264),'0','0'],hsbInputs=[_0x3a9561(0x2aa),_0x3a9561(0x2aa),_0x3a9561(0x2aa)],indiceTapeteSeleccionado=-0x1,textoTemporal='';let _0xf1abba=0x9;conectorGPIO=new Array(_0xf1abba),gpio=new Array(_0xf1abba),elemento=new Array(_0xf1abba),letraGPIO=new Array(0x4),letrasGPIOs=['A','B','C','D'],nomenclaturaElementos=['SONIC',_0x3a9561(0x22d),'LINE1',_0x3a9561(0x2a2),_0x3a9561(0x229),_0x3a9561(0x28c),'SW2',_0x3a9561(0x260),_0x3a9561(0x1a9)];for(let _0x177958=0x0;_0x177958<0x4;_0x177958++){for(let _0x2b85e5=0x0;_0x2b85e5<0x2;_0x2b85e5++){conector[_0x3a9561(0x1f9)](new Conector());}}for(let _0x217abd=0x0;_0x217abd<0x4;_0x217abd++){for(let _0x497953=0x0;_0x497953<0x2;_0x497953++){conector[_0x3a9561(0x1f9)](new Conector());}}for(let _0x1a29a5=0x0;_0x1a29a5<0x4;_0x1a29a5++){jumpers['push'](new Jumper(0x0,0x0,conector[_0x1a29a5*0x2],conector[_0x1a29a5*0x2+0x1],![],color(0xff,0xff,0x0)));}let _0x4d5208=[color(0xff,0x0,0x0),color(0xff,0x0,0xff),color(0x0,0x0,0xff),color(0x0,0xff,0xff)];for(let _0x5b0da8=0x0;_0x5b0da8<0x4;_0x5b0da8++){jumpers[_0x3a9561(0x1f9)](new Jumper(0x0,0x0,conector[(_0x5b0da8+0x4)*0x2],conector[(_0x5b0da8+0x4)*0x2+0x1],!![],_0x4d5208[_0x5b0da8]));}for(let _0x5da5da=0x0;_0x5da5da<0x8;_0x5da5da++){conector[_0x5da5da*0x2][_0x3a9561(0x22b)]=jumpers[_0x5da5da],conector[_0x5da5da*0x2+0x1][_0x3a9561(0x22b)]=jumpers[_0x5da5da];}for(let _0x187400=0x0;_0x187400<letraGPIO[_0x3a9561(0x26f)];_0x187400++){letraGPIO[_0x187400]=new Letra(letrasGPIOs[_0x187400]);}let _0x3e386c=-0xa5,_0x313ca0=-0x9e,_0x2f84ae=0xa5,_0xc2b1f9=-0x8c;inc=0xb*escalaBase;for(let _0x42d317=0x0;_0x42d317<0x5;_0x42d317++){elemento[_0x42d317]=new Elemento(_0x3e386c-inc,_0x313ca0+_0x42d317*0x12,nomenclaturaElementos[_0x42d317]);let _0x1d4605;_0x42d317<0x3?_0x1d4605=letraGPIO[0x0]:_0x1d4605=letraGPIO[0x1],gpio[_0x42d317]=new GPIO(_0x3e386c+inc,_0x313ca0+_0x42d317*0x12,_0x1d4605),conectorGPIO[_0x42d317]=new ConectorGPIO(_0x3e386c,_0x313ca0+_0x42d317*0x12);}for(let _0x4be24c=0x0;_0x4be24c<0x4;_0x4be24c++){elemento[_0x4be24c+0x5]=new Elemento(_0x2f84ae+inc,_0xc2b1f9+_0x4be24c*0x12,nomenclaturaElementos[_0x4be24c+0x5]);let _0x525dca;_0x4be24c<0x2?_0x525dca=letraGPIO[0x3]:_0x525dca=letraGPIO[0x2],gpio[_0x4be24c+0x5]=new GPIO(_0x2f84ae-inc,_0xc2b1f9+_0x4be24c*0x12,_0x525dca),conectorGPIO[_0x4be24c+0x5]=new ConectorGPIO(_0x2f84ae,_0xc2b1f9+_0x4be24c*0x12);}for(let _0x5ced18=0x0;_0x5ced18<letraGPIO[_0x3a9561(0x26f)];_0x5ced18++){if(_0x5ced18==0x0)for(let _0x48c1e9=0x0;_0x48c1e9<0x3;_0x48c1e9++){letraGPIO[_0x5ced18]['gpioLetra']['push'](gpio[_0x48c1e9]);}else{if(_0x5ced18==0x1)for(let _0x3cb532=0x0;_0x3cb532<0x2;_0x3cb532++){letraGPIO[_0x5ced18]['gpioLetra'][_0x3a9561(0x1f9)](gpio[_0x3cb532+0x3]);}else{if(_0x5ced18==0x2)for(let _0x2c1298=0x0;_0x2c1298<0x2;_0x2c1298++){letraGPIO[_0x5ced18][_0x3a9561(0x284)][_0x3a9561(0x1f9)](gpio[_0x2c1298+0x5]);}else{if(_0x5ced18==0x3)for(let _0xa0002f=0x0;_0xa0002f<0x2;_0xa0002f++){letraGPIO[_0x5ced18]['gpioLetra']['push'](gpio[_0xa0002f+0x7]);}}}}}eliminarConfiguracion();for(let _0x572cec=0x0;_0x572cec<numBotones;_0x572cec++){yBoton[_0x572cec]=ALTO_MENU_SUPERIOR/0x2;}for(let _0x29faf3=0x3;_0x29faf3<numBotones-0x2;_0x29faf3++){_0x29faf3==0x3?xBoton[0x3]=0x14+boton[0x0][_0x3a9561(0x21d)]/0x2:xBoton[_0x29faf3]=xBoton[_0x29faf3-0x1]+boton[_0x29faf3-0x1]['width']/0x2+boton[_0x29faf3][_0x3a9561(0x21d)]/0x2+0xa;}for(let _0x15885e=0x0;_0x15885e<0x3;_0x15885e++){_0x15885e==0x0?xBoton[0x0]=xBoton[numBotones-0x3]+0x4b:xBoton[_0x15885e]=xBoton[_0x15885e-0x1]+boton[_0x15885e-0x1][_0x3a9561(0x21d)]/0x2+boton[_0x15885e][_0x3a9561(0x21d)]/0x2+0xa;}xBoton[0x6]=boton[0x6]['width'],xBoton[0x7]=xBoton[0x6]+boton[0x6]['width']*1.25;let _0x47f931=0xa,_0x2bbc49=ALTO_MENU_SUPERIOR/0x2,_0x54ead0=0x0;codigoCategoria=[];for(let _0x530dfb=0x0;_0x530dfb<BOTON_MENU[_0x3a9561(0x26f)];_0x530dfb++){if(_0x530dfb%0x3==0x0)_0x47f931=0xa,_0x2bbc49+=0x1e;else{if(codigoCategoria[_0x3a9561(0x26f)]>0x0){let _0x287463=codigoCategoria[codigoCategoria[_0x3a9561(0x26f)]-0x1];_0x47f931=_0x47f931+_0x287463[_0x3a9561(0x1bb)]+0x5;}else _0x47f931=0xa+0x5;}let _0x1b295e=new Bloque(_0x47f931,_0x2bbc49,_0x530dfb,0x12c,BOTON_MENU[_0x530dfb],!![],![]);codigoCategoria[_0x3a9561(0x1f9)](_0x1b295e);let _0x15c814=codigoCategoria[codigoCategoria['length']-0x1];_0x15c814['x']+_0x15c814[_0x3a9561(0x1bb)]+0xa>_0x54ead0&&(_0x54ead0=_0x15c814['x']+_0x15c814[_0x3a9561(0x1bb)]+0xa);}for(let _0x2e05c6=0x0;_0x2e05c6<codigoCategoria['length'];_0x2e05c6++){let _0x28ba7d,_0x21b58d=0x0,_0x3c6802=t[_0x2e05c6];for(let _0x5e520f=0x0;_0x5e520f<_0x3c6802[_0x3a9561(0x26f)];_0x5e520f++){codigoMenu[_0x3a9561(0x1f9)](new Bloque(0xa,0x0,_0x2e05c6,_0x5e520f,_0x3c6802[_0x5e520f],![],![])),codigoMenu[codigoMenu['length']-0x1][_0x3a9561(0x1ea)]==_0x3a9561(0x1dc)?(_0x28ba7d=0x0,codigoMenu[_0x3a9561(0x26f)]>=0x2&&(codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x1]['anterior']=codigoMenu[codigoMenu['length']-0x2],codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x2]['siguiente']=codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x1])):_0x28ba7d=SEPARACION_BLOQUES_MENU,_0x5e520f>0x0&&codigoMenu['length']>=0x2&&codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x2][_0x3a9561(0x1ea)]==_0x3a9561(0x24d)&&(_0x28ba7d+=0xf),_0x5e520f==0x0?codigoMenu[codigoMenu['length']-0x1]['y']=codigoCategoria[codigoCategoria[_0x3a9561(0x26f)]-0x1]['y']+codigoCategoria[codigoCategoria[_0x3a9561(0x26f)]-0x1]['grosorTotal']*1.75:codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x1]['y']=codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x2]['y']+codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x2]['grosorTotal']+_0x28ba7d,codigoMenu[codigoMenu['length']-0x1][_0x3a9561(0x1bb)]>_0x21b58d&&(_0x21b58d=codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x1][_0x3a9561(0x1bb)]),_0x21b58d>_0x54ead0?anchoMenu[_0x2e05c6]=_0x21b58d+BORDE_MENU*0x2:anchoMenu[_0x2e05c6]=_0x54ead0;}altoMenu[_0x2e05c6]=codigoMenu[codigoMenu['length']-0x1]['y']+codigoMenu[codigoMenu[_0x3a9561(0x26f)]-0x1][_0x3a9561(0x1c0)]+0xa;}for(let _0x5c15d4=0x0;_0x5c15d4<codigoCategoria[_0x3a9561(0x26f)];_0x5c15d4++){altoMenu[_0x5c15d4]=altoMenu[_0x5c15d4]*escalaBase,anchoMenu[_0x5c15d4]=anchoMenu[_0x5c15d4]*escalaBase;}for(let _0x2a1c69 of codigoMenu){_0x2a1c69[_0x3a9561(0x2a0)]();}for(let _0x101d68=0x0;_0x101d68<0x7;_0x101d68++)crearVariable(String['fromCharCode'](0x74+_0x101d68));bufferEfectos=createGraphics(windowWidth,windowHeight/0x2),botonReiniciar(),document[_0x3a9561(0x28d)]['classList']['remove']('loading'),appLista=!![],setTimeout(()=>{const _0x39e55d=_0x3a9561;console[_0x39e55d(0x2b5)](_0x39e55d(0x1fa)),loop(),setTimeout(()=>{for(let _0x56fcfd=0x0;_0x56fcfd<0x5;_0x56fcfd++){setTimeout(()=>{redraw();},_0x56fcfd*0x32);}setTimeout(()=>{noLoop(),console['log']('✅\x20Redibujado\x20completado');},0x12c);},0x64);},0x1f4);}function draw(){const _0x3c4d3a=a0_0x25aed9;bloquesStart[_0x3c4d3a(0x26f)]>0x0&&bloqueStartSeleccionado==null&&bloqueStartSeleccionado==undefined&&(bloqueStartSeleccionado=bloquesStart[0x0]);let _0x424d00=width>height?_0x3c4d3a(0x19e):_0x3c4d3a(0x234);_0x424d00!==orientacionActual&&(orientacionActual=_0x424d00,windowResized());(windowWidth!=windowWidthActual||windowHeight!=windowHeightActual)&&windowResized();if(ejecutando&&(modo==0x3||modo==0x5)){isBeeping=comprobarBuzzer();if(modo==0x5)Crono+=0x1/0x3c;if(miliSegundos>0x0)miliSegundos-=0x3e8/0x3c;miliSegundos<=0x0&&(bloqueEjecutando==null||bloqueEjecutando==undefined?robotFisico['potMotor'][0x0]==0x0&&robotFisico[_0x3c4d3a(0x204)][0x1]==0x0&&botonStop():bloqueEjecutando[_0x3c4d3a(0x1af)]());}if(modo==0x5){ejecutando&&(Engine['update'](engine),robotFisico[_0x3c4d3a(0x2c5)]());for(let _0x134ccf of elemento)_0x134ccf[_0x3c4d3a(0x2f3)]();background(0xff),fill(0xff),imageMode(CENTER),rectMode(CENTER),push(),translate(windowWidth/0x2,windowHeight/0x2),scale(zoomSimulacion*escalaBase),translate(panSimulacionX,panSimulacionY);let _0x309dac=createVector(0x0,0x0),_0x32709a=createVector(0x0,0x0);desplazandoRobot?(transformedX=(mouseX-windowWidth/0x2)/(zoomSimulacion*escalaBase)-panSimulacionX,transformedY=(mouseY-windowHeight/0x2)/(zoomSimulacion*escalaBase)-panSimulacionY,_0x309dac['x']=-CrumblebotAnteriorX,_0x309dac['y']=-CrumblebotAnteriorY,_0x32709a['x']=transformedX+offsetX,_0x32709a['y']=transformedY+offsetY):(_0x309dac['x']=-robotFisico[_0x3c4d3a(0x28d)][_0x3c4d3a(0x217)]['x'],_0x309dac['y']=-robotFisico[_0x3c4d3a(0x28d)]['position']['y'],_0x32709a['x']=robotFisico[_0x3c4d3a(0x28d)]['position']['x'],_0x32709a['y']=robotFisico[_0x3c4d3a(0x28d)]['position']['y']);translate(_0x309dac);if(fondo!=null&&fondo!=undefined)image(fondo,0x0,0x0);if(lateralesVisibles){for(let _0x3286f3 of laterales)_0x3286f3[_0x3c4d3a(0x1b1)]();}for(let _0x411652 of obstaculo)_0x411652[_0x3c4d3a(0x1b1)]();if(obstaculoDesplazando!=null)obstaculoDesplazando[_0x3c4d3a(0x1b1)]();translate(_0x32709a),robotFisico['dibujar']();if(robot[_0x3c4d3a(0x25c)]&&ejecutando){push(),imageMode(CORNER),rotate(anguloOnda-robotFisico['body'][_0x3c4d3a(0x2bc)]),image(bufferEfectos,0x0,-bufferEfectos['height']/0x2/zoomSimulacion,bufferEfectos['width']/zoomSimulacion,bufferEfectos[_0x3c4d3a(0x267)]/zoomSimulacion),bufferEfectos[_0x3c4d3a(0x1f9)](),bufferEfectos[_0x3c4d3a(0x1c5)](0x0,bufferEfectos[_0x3c4d3a(0x267)]/0x2),bufferEfectos[_0x3c4d3a(0x1d7)](zoomSimulacion),bufferEfectos['strokeWeight'](0x3),bufferEfectos[_0x3c4d3a(0x27d)]();const _0x1ed578=letraGPIO[0x0][_0x3c4d3a(0x2d2)],_0x3732fc=0x190,_0x18744a=radians(7.5),_0x150e66=_0x1ed578>=_0x3732fc?bufferEfectos[_0x3c4d3a(0x2d0)](0xff,0x0,0x0):bufferEfectos[_0x3c4d3a(0x2d0)](0x0,0xff,0x0),_0x8e44eb=0x5,_0x4bd1e0=0x2d;radio+=_0x4bd1e0,ruidoTiempo+=ruidoVelocidad;for(let _0x1da8fd=0x0;_0x1da8fd<_0x8e44eb;_0x1da8fd++){const _0x26dc26=noise(ruidoTiempo+_0x1da8fd*0.35),_0x5e971d=map(_0x26dc26,0x0,0x1,-ruidoIntensidad,ruidoIntensidad),_0x9e5a75=radio-_0x1da8fd*_0x4bd1e0+_0x5e971d;if(_0x9e5a75<=0x0)continue;const _0x22b9f4=constrain(_0x9e5a75/0x7d0,0x0,0x1),_0x379001=0xff*pow(0x1-_0x22b9f4,2.8),_0x5c4db0=map(_0x1da8fd,0x0,_0x8e44eb-0x1,0xff,0x3c),_0x255cf2=min(_0x379001,_0x5c4db0);bufferEfectos['stroke'](red(_0x150e66),green(_0x150e66),blue(_0x150e66),_0x255cf2),bufferEfectos[_0x3c4d3a(0x22c)](robotFisico[_0x3c4d3a(0x283)],0x0,_0x9e5a75*0x2,_0x9e5a75*0x2,-_0x18744a,_0x18744a);}(radio/0xa>_0x3732fc||radio/0xa>_0x1ed578)&&(radio=0x0,anguloOnda=robotFisico['body']['angle'],bufferEfectos[_0x3c4d3a(0x193)]()),bufferEfectos[_0x3c4d3a(0x27f)](),pop();}pop(),fill(0x0),push();if(!desplazandoBulb)scale(escalaBase),image(bulb,windowWidth/0x2/escalaBase,windowHeight/escalaBase-bulb['height']*1.5);else{translate(mouseX,mouseY),scale(escalaBase),noStroke();for(let _0x2df4bd=0x0;_0x2df4bd<0x14;_0x2df4bd++){fill(0xff,0xff,0x0,0xc),ellipse(0x0,0x0,_0x2df4bd*0x32,_0x2df4bd*0x32);}}pop(),stroke(0x64),strokeWeight(0x1),noFill(),rectMode(CENTER),rect(windowWidth-0xcd,windowHeight/0x2-0x28,0xf,0xf),rect(windowWidth-0x7d,windowHeight/0x2-0x28,0xf,0xf),fill(0x64),ellipse(windowWidth-0xcd,windowHeight/0x2-0x28,0xa,0xa),ellipse(windowWidth-0x7d,windowHeight/0x2-0x28,0xa,0xa),text(_0x3c4d3a(0x229),windowWidth-0xbe,windowHeight/0x2-0x28),text(_0x3c4d3a(0x2ad),windowWidth-0x6e,windowHeight/0x2-0x28),textAlign(RIGHT,CENTER),fill(0x64),ellipse(windowWidth-0xd2,windowHeight/0x2,0x5,0x5),noFill();for(let _0x509dbb=0xa;_0x509dbb<0x1e;_0x509dbb+=0x5){arc(windowWidth-0xd2,windowHeight/0x2,_0x509dbb,_0x509dbb,radians(-0x2d),radians(0x2d));}fill(0x64);robot[_0x3c4d3a(0x25c)]&&ejecutando?text(elemento[0x0][_0x3c4d3a(0x273)],windowWidth-0xa0,windowHeight/0x2):text(0x0,windowWidth-0xa0,windowHeight/0x2);for(let _0x1f717d=0x0;_0x1f717d<0x2;_0x1f717d++){push(),translate(windowWidth-0xcd+_0x1f717d*0x50,windowHeight/0x2+0x1e),ellipse(0x0,0x0,0xa,0xa),text(int(elemento[0x1+_0x1f717d*0x6]['valorElemento']),0x2d,0x0);for(let _0x3c7862=0x0;_0x3c7862<TWO_PI;_0x3c7862+=PI/0x4){rotate(_0x3c7862),line(0x7,0x0,0xa,0x0);}pop();}for(let _0x53abda=0x0;_0x53abda<0x2;_0x53abda++){fill(0x64),text(int(elemento[0x2+_0x53abda*0x6][_0x3c4d3a(0x273)]),windowWidth-0xa0+_0x53abda*0x50,windowHeight/0x2+0x3c),rect(windowWidth-0xd2+_0x53abda*0x50,windowHeight/0x2+0x3c,0xa,0xa),fill(0xff),rect(windowWidth-0xc8+_0x53abda*0x50,windowHeight/0x2+0x3c,0xa,0xa);}fill(0x64),textAlign(LEFT,CENTER);for(let _0x16c40f=0x0;_0x16c40f<letraGPIO[_0x3c4d3a(0x26f)];_0x16c40f++){letraGPIO[_0x16c40f]['actualizarValor'](),text(String[_0x3c4d3a(0x2ac)](0x41+_0x16c40f)+':\x20'+letraGPIO[_0x16c40f]['valorLetra'],windowWidth-0xd2,windowHeight/0x2+0x5a+0x1e*_0x16c40f);}let _0xd36d32=windowHeight/0x2-codigoVariables[_0x3c4d3a(0x26f)]/0x2*0x14;for(let _0x3928aa of codigoVariables){_0xd36d32=_0xd36d32+0x14,text(_0x3928aa['texto'][0x0]+':\x20'+_0x3928aa[_0x3c4d3a(0x19f)],0x41,_0xd36d32);}push(),translate(windowWidth/0x2,0x0),scale(escalaBase),fill(0x64,0x64,0xc8),rect(-0x5a,0x5a,0xa0,0x1e),fill(0xc8,0x64,0x64),rect(0x5a,0x5a,0xa0,0x1e),fill(0xff),textAlign(CENTER,CENTER),text(_0x3c4d3a(0x2c9),-0x5a,0x5a),text(_0x3c4d3a(0x2b8),0x5a,0x5a),pop();}else{if(modo==0x4){dibujarBloques();if(colorPickerOpen&&bloqueEditando){push(),translate(windowWidth/0x2,windowHeight/0x2),scale(escalaBase),translate(-ANCHO_MARCO/0x2,-ALTO_MARCO/0x2),textSize(0xc),fill(0xc8),strokeWeight(0x1),stroke(0x80),textAlign(LEFT,CENTER);if(customColorActivo)rect(0x0,0x0,ANCHO_MARCO,ALTO_MARCO);else rect(0x0,0x0,PICKER_X,ALTO_MARCO);drawColours();if(customColorActivo)drawColorPicker();pop(),textSize(0xe);}else desplegableBloque&&(push(),fill(0xc8),rect(xDesplegable,yDesplegable,0xc8*escalaBase,0x32*escalaBase),fill(0x0),textAlign(LEFT,TOP),textSize(int(0xe*escalaBase)),text(_0x3c4d3a(0x202),xDesplegable+0xa*escalaBase,yDesplegable+0xa*escalaBase),text(_0x3c4d3a(0x1e9),xDesplegable+0xa*escalaBase,yDesplegable+0x1e*escalaBase),textSize(0xe),pop());}else{if(modo==0x3){background(0xfe),imageMode(CENTER),rectMode(CENTER),push(),translate(windowWidth/0x2,windowHeight/0x2),scale(zoomConfiguracion*escalaBase),translate(panConfiguracionX,panConfiguracionY),robot['dibujar']();for(let _0xcde833 of jumpers)_0xcde833[_0x3c4d3a(0x1b1)]();for(let _0x128f02=0x0;_0x128f02<conector[_0x3c4d3a(0x26f)];_0x128f02+=0x2)conector[_0x128f02][_0x3c4d3a(0x22b)][_0x3c4d3a(0x1b1)]();if(!robot['ultrasonidosConectado'])image(ultrasonic,ULTRASONIC_X,ULTRASONIC_Y);else image(ultrasonidos,ULTRASONIDOS_X,ULTRASONIDOS_Y);noFill(),strokeWeight(0x1),stroke(0x80);if(ejecutando&&isBeeping)for(let _0x734f90=0xa;_0x734f90<0x64;_0x734f90+=0xa){let _0x1da06f=_0x734f90+random(-0x5,0x5);ellipse(-0xaa,0x2d,_0x1da06f,_0x1da06f);}pop();}else{if(modo==0x6){(!xPos||xPos[_0x3c4d3a(0x26f)]!==thumbnails[_0x3c4d3a(0x26f)])&&calcularThumbnails();push(),imageMode(CORNER),background(0xf0),noFill(),scale(escalaBase),stroke(0x2),rectMode(CORNER);for(let _0x8e21ea=0x0;_0x8e21ea<thumbnails['length'];_0x8e21ea++){thumbnails[_0x8e21ea]&&image(thumbnails[_0x8e21ea],xPos[_0x8e21ea],yPos[_0x8e21ea]-offsetYBarra),indiceTapeteSeleccionado!=_0x8e21ea?(stroke(0x80),strokeWeight(0x1)):(stroke(0xff,0x0,0x0),strokeWeight(0x3)),rect(xPos[_0x8e21ea],yPos[_0x8e21ea]-offsetYBarra,anchoThumbnail,altoThumbnail);}if(totalThumbnailsHeight>windowHeight-0x64){let _0x35855b=(windowHeight-0x64)/totalThumbnailsHeight,_0x43a36e=(windowHeight-0x64)*_0x35855b,_0x5015b2=0x3c+(windowHeight-0x64-_0x43a36e)*(offsetYBarra/(totalThumbnailsHeight-(windowHeight-0x64)));fill(0xc8),rect(windowWidth-0x28,0x3c,0x14,windowHeight-0x64),fill(0x96),rect(windowWidth-0x28,_0x5015b2,0x14,_0x43a36e);}pop();}}}}dibujarNoBloques();}function calcularThumbnails(){const _0x4e4656=a0_0x25aed9;let _0x4da4e8=0x4,_0x4984f5=0x14;anchoThumbnail=0x96,altoThumbnail=0x96,xPos=new Array(thumbnails[_0x4e4656(0x26f)]),yPos=new Array(thumbnails[_0x4e4656(0x26f)]);for(let _0x36e753=0x0;_0x36e753<thumbnails[_0x4e4656(0x26f)];_0x36e753++){let _0x5e8498=_0x36e753%_0x4da4e8,_0xcae801=Math[_0x4e4656(0x2e6)](_0x36e753/_0x4da4e8);xPos[_0x36e753]=_0x4984f5+_0x5e8498*(anchoThumbnail+_0x4984f5),yPos[_0x36e753]=_0x4984f5+_0xcae801*(altoThumbnail+_0x4984f5)+ALTO_MENU_SUPERIOR*escalaBase;}totalThumbnailsHeight=_0x4984f5+Math[_0x4e4656(0x268)](thumbnails[_0x4e4656(0x26f)]/_0x4da4e8)*(altoThumbnail+_0x4984f5)+ALTO_MENU_SUPERIOR*escalaBase;}function dibujarBloques(){const _0x34cb8e=a0_0x25aed9;background(0xfe);anchoMenu[menu]>anchoMenu[0x0]?anchoRect=anchoMenu[menu]+0xa:anchoRect=anchoMenu[0x0]+0xa;rectMode(CORNER),imageMode(CORNER),bloquesNoSeleccionados=codigo[_0x34cb8e(0x274)](_0x3d9fbc=>!bloquesSeleccionados[_0x34cb8e(0x20b)](_0x3d9fbc));for(let _0x568ab0 of bloquesNoSeleccionados){if(_0x568ab0[_0x34cb8e(0x2e7)]=='_')_0x568ab0[_0x34cb8e(0x2c2)]();else _0x568ab0['dibujoSub']();}fill(0xcd),noStroke(),rect(0x0,0x0,anchoRect*escalaBase,(altoMenu[menu]+0x5)*escalaBase),push(),translate(0x0,panMenuBloquesY);for(let _0x43cf98 of codigoMenu)if(_0x43cf98[_0x34cb8e(0x23b)]==menu)_0x43cf98[_0x34cb8e(0x1b1)]();for(let _0x181fa1 of codigoVariables)if(_0x181fa1[_0x34cb8e(0x23b)]==0x3&&_0x181fa1[_0x34cb8e(0x23b)]==menu)_0x181fa1['dibujar']();for(let _0x197d19 of botonesVariables)if(_0x197d19['categoria']==0x3&&_0x197d19[_0x34cb8e(0x23b)]==menu)_0x197d19[_0x34cb8e(0x1b1)]();pop(),rect(0x0,0x0,anchoRect*escalaBase,ALTO_COMIENZO_BLOQUES*escalaBase);for(let _0x45fedc of codigoCategoria)_0x45fedc[_0x34cb8e(0x1b1)]();for(let _0x42fef3 of bloquesSeleccionados){if(_0x42fef3[_0x34cb8e(0x2e7)]=='_')_0x42fef3[_0x34cb8e(0x2c2)]();}bloqueSeleccionado!=null&&(bloqueSeleccionado[_0x34cb8e(0x2c2)](),bloqueSeleccionado[_0x34cb8e(0x25e)]!=null&&(bloqueSeleccionado[_0x34cb8e(0x25e)][_0x34cb8e(0x1ea)]=='ElseBlock'&&bloqueSeleccionado[_0x34cb8e(0x25e)][_0x34cb8e(0x1b1)]())),dibujoFlecha();}function dibujarNoBloques(){const _0x371bdc=a0_0x25aed9;imageMode(CORNER),push(),scale(escalaBase),image(bufferMenuSuperior,0x0,0x0),rectMode(CORNER),(modo==0x3||modo==0x5)&&(fill(0xff),stroke(0x80),rect(0xa,0x46,0x64,0x28),rect(0xa,0x73,0x64,0x28),fill(0x80),textAlign(CENTER),text(_0x371bdc(0x215),0x37,0x55),text(nf(Crono,0x0,0x1)+_0x371bdc(0x2f7),0x37,0x64),text(_0x371bdc(0x2c7),0x37,0x82),text(nf(Distancia/0xa,0x0,0x1)+_0x371bdc(0x197),0x37,0x91)),pop(),movidoDuranteEjecucion&&(fill(0xff,0x0,0x0),ellipse(windowWidth-0x32*escalaBase,windowHeight-0x4b*escalaBase,0x19,0x19));}function crearMenuSuperior(){const _0x483e08=a0_0x25aed9;bufferMenuSuperior[_0x483e08(0x1f9)](),bufferMenuSuperior[_0x483e08(0x27c)](CENTER),bufferMenuSuperior[_0x483e08(0x1c1)](0xcd),bufferMenuSuperior[_0x483e08(0x252)](),bufferMenuSuperior['rectMode'](CORNER),bufferMenuSuperior['rect'](0x0,0x0,windowWidth,ALTO_MENU_SUPERIOR);for(let _0x4d97ab=0x0;_0x4d97ab<0x3;_0x4d97ab++){bufferMenuSuperior[_0x483e08(0x2e4)]();if(modo==0x4||(modo==0x3||modo==0x5)&&((ejecutando||bloqueEjecutando==null)&&_0x4d97ab==0x0||!ejecutando&&_0x4d97ab==0x1))bufferMenuSuperior[_0x483e08(0x24c)](0xff,0x64);bufferMenuSuperior[_0x483e08(0x253)](boton[_0x4d97ab],xBoton[_0x4d97ab],yBoton[_0x4d97ab]);}for(let _0x2f1104=0x3;_0x2f1104<numBotones-0x2;_0x2f1104++){bufferMenuSuperior[_0x483e08(0x2e4)]();if(_0x2f1104==modo)bufferMenuSuperior[_0x483e08(0x24c)](0xff,0x64);bufferMenuSuperior[_0x483e08(0x253)](boton[_0x2f1104],xBoton[_0x2f1104],yBoton[_0x2f1104]);}bufferMenuSuperior['image'](boton[0x6],windowWidth/escalaBase-xBoton[0x6],yBoton[0x6]),bufferMenuSuperior[_0x483e08(0x253)](boton[0x7],windowWidth/escalaBase-xBoton[0x7],yBoton[0x7]),bufferMenuSuperior[_0x483e08(0x27f)]();}function dibujoFlecha(){const _0x547236=a0_0x25aed9;if(bloqueSeleccionado==null)return;fill(0x80,0x80,0x80,0xc8);let _0x127f24=![];if(seleccion4!=null)_0x127f24=!![],xFlecha=seleccion4['x'],yFlecha=seleccion4['y'];else{if(seleccion3!=null)_0x127f24=!![],xFlecha=seleccion3['x'],yFlecha=seleccion3['y']+seleccion3[_0x547236(0x1c0)];else{if(seleccion2!=null)_0x127f24=!![],xFlecha=seleccion2['x']+seleccion2[_0x547236(0x1aa)][seleccionSubBloque],yFlecha=seleccion2['y']+seleccion2['grosorBloque']/0x2;else seleccion!=null&&(_0x127f24=!![],seleccion[_0x547236(0x27e)]||seleccion[_0x547236(0x1ea)]==_0x547236(0x24d)?xFlecha=seleccion['x']+seleccion['anchoLadoIzqBucle']:xFlecha=seleccion['x'],yFlecha=seleccion['y']+seleccion[_0x547236(0x2ec)]);}}_0x127f24&&(push(),translate(windowWidth/0x2,windowHeight/0x2),scale(zoomCodigo*escalaBase),translate(panCodigoX,panCodigoY),beginShape(),vertex(xFlecha,yFlecha),vertex(xFlecha-0xa,yFlecha-0xa),vertex(xFlecha-0xa,yFlecha-0x5),vertex(xFlecha-0x1e,yFlecha-0x3),vertex(xFlecha-0x1e,yFlecha+0x3),vertex(xFlecha-0xa,yFlecha+0x5),vertex(xFlecha-0xa,yFlecha+0xa),vertex(xFlecha,yFlecha),endShape(),pop());}function conectar(_0x338d28,_0x1a7b2e,_0x1a3c2b){const _0x4f0ef1=a0_0x25aed9;if(_0x338d28!=_0x1a7b2e){let _0xde563e=null,_0x5d2505=bloquesSeleccionados[bloquesSeleccionados[_0x4f0ef1(0x26f)]-0x1];_0x1a7b2e[_0x4f0ef1(0x25e)]!=null&&(_0x1a7b2e[_0x4f0ef1(0x27e)]&&!_0x1a3c2b||!_0x1a7b2e[_0x4f0ef1(0x27e)])&&(_0x1a7b2e['siguiente']['anterior']=_0x5d2505,_0x5d2505[_0x4f0ef1(0x25e)]=_0x1a7b2e[_0x4f0ef1(0x25e)]);_0x1a7b2e[_0x4f0ef1(0x27e)]&&_0x1a3c2b?(_0xde563e=_0x1a7b2e,_0x1a7b2e[_0x4f0ef1(0x1a0)]!=null&&(_0x1a7b2e['bucleSiguiente'][_0x4f0ef1(0x1b2)]=_0x5d2505,_0x5d2505[_0x4f0ef1(0x25e)]=_0x1a7b2e['bucleSiguiente']),_0x1a7b2e[_0x4f0ef1(0x1a0)]=_0x338d28):_0xde563e=_0x1a7b2e[_0x4f0ef1(0x1f6)];(!_0x1a7b2e[_0x4f0ef1(0x27e)]||_0x1a7b2e['bucle']&&!_0x1a3c2b)&&(_0x338d28[_0x4f0ef1(0x1b2)]=_0x1a7b2e,_0x1a7b2e['siguiente']=_0x338d28);let _0x2888df=_0x338d28;_0x338d28[_0x4f0ef1(0x1f6)]=_0xde563e;while(_0x2888df[_0x4f0ef1(0x25e)]!=null){_0x2888df[_0x4f0ef1(0x25e)][_0x4f0ef1(0x1f6)]=_0xde563e,_0x2888df=_0x2888df[_0x4f0ef1(0x25e)];}_0x338d28['calculoGrosorBucle'](),_0x1a7b2e[_0x4f0ef1(0x2e0)](),_0x1a7b2e[_0x4f0ef1(0x29f)](),_0x338d28[_0x4f0ef1(0x2a0)](),_0x1a7b2e[_0x4f0ef1(0x2a0)]();}}function desconectar(_0xe282cf){const _0xe0f8e5=a0_0x25aed9;if(_0xe282cf['tipo']=='_'){if(_0xe282cf[_0xe0f8e5(0x1b2)]!=null)_0xe282cf[_0xe0f8e5(0x1b2)][_0xe0f8e5(0x25e)]=null,_0xe282cf[_0xe0f8e5(0x1b2)]=null;else _0xe282cf[_0xe0f8e5(0x1f6)]!=null&&(_0xe282cf[_0xe0f8e5(0x1f6)][_0xe0f8e5(0x1a0)]=null);let _0x5530f6=_0xe282cf['padre'];_0xe282cf[_0xe0f8e5(0x1f6)]=null;let _0xa661bf=_0xe282cf;while(_0xa661bf[_0xe0f8e5(0x25e)]!=null){_0xa661bf=_0xa661bf[_0xe0f8e5(0x25e)],_0xa661bf['padre']=null;}if(_0x5530f6!=null){_0x5530f6[_0xe0f8e5(0x2e0)](),_0x5530f6[_0xe0f8e5(0x29f)](),_0x5530f6[_0xe0f8e5(0x2a0)]();if(_0x5530f6[_0xe0f8e5(0x1ea)]==_0xe0f8e5(0x1dc))_0x5530f6[_0xe0f8e5(0x1b2)][_0xe0f8e5(0x2a0)]();}}}function esNumeroReal(_0x2401ad){try{return parseFloat(_0x2401ad),!isNaN(parseFloat(_0x2401ad))&&isFinite(_0x2401ad);}catch(_0x53ae21){return![];}}function crearVariable(_0x336e7d){const _0x23f560=a0_0x25aed9;let _0x5d4d5f;if(codigoVariables[_0x23f560(0x26f)]===0x0)_0x5d4d5f=botonCrearVariable['y']+botonCrearVariable[_0x23f560(0x2ec)]+SEPARACION_BLOQUES_MENU;else{let _0x160451=codigoVariables[codigoVariables[_0x23f560(0x26f)]-0x1];_0x5d4d5f=_0x160451['y']+_0x160451['grosorBloque']+SEPARACION_BLOQUES_MENU;}let _0x2d9ef9=new Bloque(0xa,_0x5d4d5f,0x3,0x4,BOTON_VARIABLE,![],![]);_0x2d9ef9[_0x23f560(0x1b9)][0x0]=_0x336e7d,_0x2d9ef9[_0x23f560(0x262)][0x0]=_0x2d9ef9['calculoAnchoDato'](_0x2d9ef9[_0x23f560(0x1b9)][0x0]),_0x2d9ef9[_0x23f560(0x1bd)](),_0x2d9ef9[_0x23f560(0x23a)][0x0]='0',codigoVariables['push'](_0x2d9ef9);if(codigoMenu[_0x23f560(0x26f)]>0x0){let _0x55fdb=codigoMenu[codigoMenu[_0x23f560(0x26f)]-0x1];altoMenu[0x3]=_0x5d4d5f+_0x55fdb[_0x23f560(0x1c0)]+0xa;}let _0x558baa=_0x2d9ef9['x']+_0x2d9ef9[_0x23f560(0x1bb)]+0xa,_0x6d8142=new Bloque(_0x558baa,_0x5d4d5f,0x3,0x64,BOTON_DEL,!![],![]);botonesVariables[_0x23f560(0x1f9)](_0x6d8142),_0x2d9ef9[_0x23f560(0x25e)]=_0x6d8142,_0x6d8142[_0x23f560(0x1f6)]=_0x2d9ef9;let _0x290a91=_0x6d8142['x']+_0x6d8142[_0x23f560(0x1bb)]+0xa,_0x182414=new Bloque(_0x290a91,_0x5d4d5f,0x3,0xc8,BOTON_RENAME,!![],![]);botonesVariables['push'](_0x182414),_0x6d8142[_0x23f560(0x25e)]=_0x182414,_0x182414[_0x23f560(0x1f6)]=_0x2d9ef9;}function drawColours(){const _0x3f1848=a0_0x25aed9,_0x5c1117=[color(0xff,0x80,0x80),color(0xff,0xff,0x80),color(0x80,0xff,0x80),color(0x0,0xff,0x80),color(0x80,0xff,0xff),color(0x0,0x80,0xff),color(0xff,0x80,0xc0),color(0xff,0x80,0xff),color(0xff,0x0,0x0),color(0xff,0xff,0x0),color(0x80,0xff,0x0),color(0x0,0xff,0x40),color(0x0,0xff,0xff),color(0x0,0x80,0xc0),color(0x80,0x80,0xc0),color(0xff,0x0,0xff),color(0x80,0x40,0x40),color(0xff,0x80,0x40),color(0x0,0xff,0x0),color(0x0,0x80,0x80),color(0x0,0x40,0x80),color(0x80,0x80,0xff),color(0x80,0x0,0x40),color(0xff,0x0,0x80),color(0x80,0x0,0x0),color(0xff,0x80,0x0),color(0x0,0x80,0x0),color(0x0,0x80,0x40),color(0x0,0x0,0xff),color(0x0,0x0,0xa0),color(0x80,0x0,0x80),color(0x80,0x0,0xff),color(0x40,0x0,0x0),color(0x80,0x40,0x0),color(0x0,0x40,0x0),color(0x0,0x40,0x40),color(0x0,0x0,0x80),color(0x0,0x0,0x40),color(0x40,0x0,0x40),color(0x40,0x0,0x80),color(0x0,0x0,0x0),color(0x80,0x80,0x0),color(0x80,0x80,0x40),color(0x80,0x80,0x80),color(0x40,0x80,0x80),color(0xc0,0xc0,0xc0),color(0x40,0x0,0x40),color(0xff,0xff,0xff)];fill(0x0),text(_0x3f1848(0x297),0xa,0x14),strokeWeight(0x1),stroke(0x80);for(let _0x5dd5bc=0x0;_0x5dd5bc<0x30;_0x5dd5bc++){fill(_0x5c1117[_0x5dd5bc]),rect(0xa+_0x5dd5bc%0x8*0x19,0x28+int(_0x5dd5bc/0x8)*0x14,0x14,0xf);}BASIC_COLORSeleccionado<0x30&&(stroke(0x80),noFill(),rect(0xa+int(BASIC_COLORSeleccionado%0x8)*0x19-0x2,0x28+int(BASIC_COLORSeleccionado/0x8)*0x14-0x2,0x18,0x13));fill(0x0),text(_0x3f1848(0x2a7),0xa,0xb4);for(let _0x2f429d=0x0;_0x2f429d<0x10;_0x2f429d++){fill(customColor[_0x2f429d]),rect(0xa+int(_0x2f429d%0x8)*0x19,0xc8+int(_0x2f429d/0x8)*0x14,0x14,0xf);}customColorSeleccionado<0x10&&(stroke(0x80),noFill(),rect(0xa+int(customColorSeleccionado%0x8)*0x19-0x2,0xc8+int(customColorSeleccionado/0x8)*0x14-0x2,0x18,0x13));fill(0xc8),rect(0xa,0xfa,0xc3,0x14),textAlign(CENTER,CENTER);if(customColorActivo)fill(0x80);else fill(0x0);text(_0x3f1848(0x237),0x78,0x104),fill(0xc8),rect(0xa,0x118,0x5a,0x14),rect(0x73,0x118,0x5a,0x14),fill(0x0),text('OK',0x37,0x122),text(_0x3f1848(0x222),0xa0,0x122);}function drawColorPicker(){const _0x2e2ce5=a0_0x25aed9;let _0x2ebbe2=PICKER_X+ANCHO_PICKER+0xa,_0x56f0b3=PICKER_Y,_0x15ce8c=0xa,_0x39ff6a=PICKER_Y+0xf,_0x2e5115=0x1e;noFill(),stroke(0x80),rect(PICKER_X,PICKER_Y,0xb4,-0xb4),imageMode(CORNER);HSLimage&&image(HSLimage,PICKER_X,PICKER_Y-ALTO_PICKER);fill(0xff),stroke(0x0),strokeWeight(0x1),ellipse(PICKER_X+map(hue,0x0,0xef,0x0,ANCHO_PICKER),PICKER_Y-map(saturation,0x0,0xf0,0x0,ALTO_PICKER),0xa,0xa),noStroke();for(let _0x4269cb=0x0;_0x4269cb<ALTO_PICKER;_0x4269cb++){fill(HSBtoRGB(hue,saturation,map(_0x4269cb,0x0,ALTO_PICKER,0x0,0xf0))),rect(_0x2ebbe2,_0x56f0b3-_0x4269cb,_0x15ce8c,0x1);}stroke(0x0),noFill(),rect(_0x2ebbe2,_0x56f0b3,0xa,-ALTO_PICKER);let _0x1a67d9=_0x56f0b3-map(getBrightness(currentColor),0x0,0xf0,0x0,ALTO_PICKER);stroke(0x0),strokeWeight(0x2),line(_0x2ebbe2-0x5,_0x1a67d9,_0x2ebbe2+_0x15ce8c+0x5,_0x1a67d9),fill(0x0),strokeWeight(0x1),textAlign(RIGHT,CENTER),text('Hue:',PICKER_X+0x58,_0x39ff6a),text(_0x2e2ce5(0x214),PICKER_X+0x58,_0x39ff6a+0x14),text('Lum:',PICKER_X+0x58,_0x39ff6a+0x28),text(_0x2e2ce5(0x2a6),PICKER_X+0xa8,_0x39ff6a),text(_0x2e2ce5(0x25a),PICKER_X+0xa8,_0x39ff6a+0x14),text('Blue:',PICKER_X+0xa8,_0x39ff6a+0x28),fill(0xff),stroke(0x0),rect(PICKER_X+0x5a,_0x39ff6a-0xa,_0x2e5115,0x14),rect(PICKER_X+0x5a,_0x39ff6a+0xa,_0x2e5115,0x14),rect(PICKER_X+0x5a,_0x39ff6a+0x1e,_0x2e5115,0x14),rect(PICKER_X+0xaa,_0x39ff6a-0xa,_0x2e5115,0x14),rect(PICKER_X+0xaa,_0x39ff6a+0xa,_0x2e5115,0x14),rect(PICKER_X+0xaa,_0x39ff6a+0x1e,_0x2e5115,0x14),textAlign(LEFT,CENTER),fill(0x0),text(rgbInputs[0x0],PICKER_X+0xaf,_0x39ff6a),text(rgbInputs[0x1],PICKER_X+0xaf,_0x39ff6a+0x14),text(rgbInputs[0x2],PICKER_X+0xaf,_0x39ff6a+0x28),text(hsbInputs[0x0],PICKER_X+0x5f,_0x39ff6a),text(hsbInputs[0x1],PICKER_X+0x5f,_0x39ff6a+0x14),text(hsbInputs[0x2],PICKER_X+0x5f,_0x39ff6a+0x28),fill(0xc8),rect(PICKER_X,0x118,ANCHO_PICKER+0x14,0x14),fill(0x0),textAlign(CENTER,CENTER),text(_0x2e2ce5(0x1d1),PICKER_X+ANCHO_PICKER/0x2,0x122),noStroke(),fill(colorValido(currentColor)),rect(PICKER_X,PICKER_Y+0xa,0x32,0x28);}function updateColor(){rgbInputs[0x0]=str(int(red(currentColor))),rgbInputs[0x1]=str(int(green(currentColor))),rgbInputs[0x2]=str(int(blue(currentColor))),hsbInputs[0x0]=str(int(getHue(currentColor))),hsbInputs[0x1]=str(int(getSaturation(currentColor))),hsbInputs[0x2]=str(int(getBrightness(currentColor)));}function colorValido(_0x5c0136){const _0x562a65=a0_0x25aed9;try{let _0x9c372a=red(_0x5c0136);if(!isNaN(_0x9c372a))return _0x5c0136;}catch(_0x2a9911){}if(Array[_0x562a65(0x296)](_0x5c0136)&&_0x5c0136[_0x562a65(0x26f)]>=0x3)return HSBtoRGB(_0x5c0136[0x0],_0x5c0136[0x1],_0x5c0136[0x2]);if(Array[_0x562a65(0x296)](_0x5c0136)&&_0x5c0136[_0x562a65(0x26f)]>=0x3)return color(_0x5c0136[0x0],_0x5c0136[0x1],_0x5c0136[0x2]);return color(0xff,0xff,0xff);}function extraerRGB(_0x369ddf){const _0x2ad1ab=a0_0x25aed9;if(!_0x369ddf)return{'r':0x0,'g':0x0,'b':0x0};try{if(Array['isArray'](_0x369ddf)&&_0x369ddf['length']>=0x3)return{'r':_0x369ddf[0x0],'g':_0x369ddf[0x1],'b':_0x369ddf[0x2]};if(_0x369ddf['r']!==undefined)return{'r':_0x369ddf['r'],'g':_0x369ddf['g'],'b':_0x369ddf['b']};if(typeof red===_0x2ad1ab(0x26e))return{'r':red(_0x369ddf),'g':green(_0x369ddf),'b':blue(_0x369ddf)};return{'r':0x0,'g':0x0,'b':0x0};}catch(_0x1097ef){return{'r':0x0,'g':0x0,'b':0x0};}}function RGBtoHSB(_0x1cf27a,_0x22fb35,_0x26f569){_0x1cf27a=constrain(_0x1cf27a,0x0,0xff)/0xff,_0x22fb35=constrain(_0x22fb35,0x0,0xff)/0xff,_0x26f569=constrain(_0x26f569,0x0,0xff)/0xff;let _0x5ff37=max(_0x1cf27a,_0x22fb35,_0x26f569),_0xb2d139=min(_0x1cf27a,_0x22fb35,_0x26f569),_0x3a86f9=_0x5ff37-_0xb2d139,_0x4327c3=0x0;if(_0x3a86f9!==0x0){if(_0x5ff37===_0x1cf27a)_0x4327c3=(_0x22fb35-_0x26f569)/_0x3a86f9%0x6;else{if(_0x5ff37===_0x22fb35)_0x4327c3=(_0x26f569-_0x1cf27a)/_0x3a86f9+0x2;else _0x4327c3=(_0x1cf27a-_0x22fb35)/_0x3a86f9+0x4;}_0x4327c3=(_0x4327c3*0x3c+0x168)%0x168;}let _0x5d7571=(_0x5ff37+_0xb2d139)/0x2,_0x40162d=_0x3a86f9!==0x0?_0x3a86f9/(0x1-abs(0x2*_0x5d7571-0x1)):0x0;return[map(_0x4327c3,0x0,0x168,0x0,0xef),_0x40162d*0xf0,_0x5d7571*0xf0];}function HSBtoRGB(_0x3454b5,_0x1b408d,_0x46858f){const _0x232e67=a0_0x25aed9;_0x3454b5=constrain(_0x3454b5,0x0,0xef),_0x1b408d=constrain(_0x1b408d,0x0,0xf0),_0x46858f=constrain(_0x46858f,0x0,0xf0);let _0x6f2540=_0x3454b5%0xf0/0xef*0x168,_0x2a247d=_0x1b408d/0xf0,_0x17249c=_0x46858f/0xf0,_0x867032=(0x1-Math['abs'](0x2*_0x17249c-0x1))*_0x2a247d,_0x560fc7=_0x867032*(0x1-Math[_0x232e67(0x258)](_0x6f2540/0x3c%0x2-0x1)),_0x2059c2=_0x17249c-_0x867032/0x2,_0x1280cf,_0x4acbec,_0x35fa5e;if(_0x6f2540<0x3c)_0x1280cf=_0x867032,_0x4acbec=_0x560fc7,_0x35fa5e=0x0;else{if(_0x6f2540<0x78)_0x1280cf=_0x560fc7,_0x4acbec=_0x867032,_0x35fa5e=0x0;else{if(_0x6f2540<0xb4)_0x1280cf=0x0,_0x4acbec=_0x867032,_0x35fa5e=_0x560fc7;else{if(_0x6f2540<0xf0)_0x1280cf=0x0,_0x4acbec=_0x560fc7,_0x35fa5e=_0x867032;else _0x6f2540<0x12c?(_0x1280cf=_0x560fc7,_0x4acbec=0x0,_0x35fa5e=_0x867032):(_0x1280cf=_0x867032,_0x4acbec=0x0,_0x35fa5e=_0x560fc7);}}}return color(Math[_0x232e67(0x2f2)](constrain((_0x1280cf+_0x2059c2)*0xff,0x0,0xff)),Math['round'](constrain((_0x4acbec+_0x2059c2)*0xff,0x0,0xff)),Math[_0x232e67(0x2f2)](constrain((_0x35fa5e+_0x2059c2)*0xff,0x0,0xff)));}function colorAHex(_0x14e0ea){let _0x3f26a0=extraerRGB(_0x14e0ea);return'#'+hex(_0x3f26a0['r'],0x2)+hex(_0x3f26a0['g'],0x2)+hex(_0x3f26a0['b'],0x2);}function getBrightness(_0x464108){let _0x3e7619=extraerRGB(_0x464108),_0x2d3009=RGBtoHSB(_0x3e7619['r'],_0x3e7619['g'],_0x3e7619['b']);return _0x2d3009[0x2];}function getHue(_0x56b6da){let _0x66ced=extraerRGB(_0x56b6da),_0x1d9b05=RGBtoHSB(_0x66ced['r'],_0x66ced['g'],_0x66ced['b']);return _0x1d9b05[0x0];}function getSaturation(_0x45500f){let _0x46e6a8=extraerRGB(_0x45500f),_0x496d69=RGBtoHSB(_0x46e6a8['r'],_0x46e6a8['g'],_0x46e6a8['b']);return _0x496d69[0x1];}function calcularEscala(){const _0x40ccd0=a0_0x25aed9,_0x58de12=window[_0x40ccd0(0x2b3)],_0x2ec0d=window['innerHeight'],_0xf45411=_0x58de12/0x556,_0xf97486=_0x2ec0d/0x300,_0xe9d6b5=Math['min'](_0xf45411,_0xf97486);return _0xe9d6b5;}function deshabilitarGestosMóviles(){const _0x30f967=a0_0x25aed9;let _0x599293=document[_0x30f967(0x1ae)]('canvas');if(!_0x599293)return;_0x599293[_0x30f967(0x2fb)][_0x30f967(0x201)]=_0x30f967(0x299),_0x599293[_0x30f967(0x2fb)][_0x30f967(0x2cd)]=_0x30f967(0x299),_0x599293[_0x30f967(0x2fb)]['userSelect']=_0x30f967(0x299),_0x599293[_0x30f967(0x192)](_0x30f967(0x26c),function(_0x3d367d){const _0x269fcb=_0x30f967;_0x3d367d[_0x269fcb(0x1ed)]===_0x599293&&_0x3d367d[_0x269fcb(0x2c1)][_0x269fcb(0x26f)]>0x1&&_0x3d367d[_0x269fcb(0x2cf)]();},{'passive':![]}),_0x599293['addEventListener'](_0x30f967(0x207),function(_0x12ff2f){const _0x36606b=_0x30f967;_0x12ff2f[_0x36606b(0x1ed)]===_0x599293&&_0x12ff2f['preventDefault']();},{'passive':![]});}function habilitarMenuTactil(){const _0x25ee3b=a0_0x25aed9;console[_0x25ee3b(0x2b5)](_0x25ee3b(0x292));const _0x3b0d6b=document[_0x25ee3b(0x22e)](_0x25ee3b(0x203));if(!_0x3b0d6b){console[_0x25ee3b(0x290)](_0x25ee3b(0x2b4));return;}_0x3b0d6b[_0x25ee3b(0x2fb)][_0x25ee3b(0x201)]=_0x25ee3b(0x206),_0x3b0d6b[_0x25ee3b(0x2fb)][_0x25ee3b(0x212)]='auto',_0x3b0d6b[_0x25ee3b(0x2fb)]['zIndex']='1000';const _0x584d2c=document['querySelectorAll']('.menu-button');console[_0x25ee3b(0x2b5)](_0x25ee3b(0x278),_0x584d2c[_0x25ee3b(0x26f)]),_0x584d2c[_0x25ee3b(0x20f)]((_0x10f8ea,_0x52c4fc)=>{const _0x2c24b1=_0x25ee3b,_0x236c20=_0x10f8ea['textContent'][_0x2c24b1(0x2c4)]();console['log']('Configurando\x20botón\x20'+_0x52c4fc+':\x20\x22'+_0x236c20+'\x22'),_0x10f8ea['removeAttribute'](_0x2c24b1(0x1da));let _0x3cb987='';if(_0x236c20[_0x2c24b1(0x20b)](_0x2c24b1(0x2a1)))_0x3cb987='archivo-menu';else _0x236c20['includes'](_0x2c24b1(0x1eb))&&(_0x3cb987='config-menu');_0x10f8ea[_0x2c24b1(0x192)]('touchstart',function(_0x46e371){const _0x27a6c3=_0x2c24b1;return _0x46e371['preventDefault'](),_0x46e371[_0x27a6c3(0x256)](),console[_0x27a6c3(0x2b5)]('Touchstart\x20en\x20botón:',_0x236c20),toggleMenu(_0x3cb987),![];},{'passive':![]}),_0x10f8ea[_0x2c24b1(0x192)](_0x2c24b1(0x1ce),function(_0x148d57){const _0x56468b=_0x2c24b1;_0x148d57[_0x56468b(0x2cf)](),_0x148d57['stopPropagation'](),console[_0x56468b(0x2b5)](_0x56468b(0x196),_0x236c20),toggleMenu(_0x3cb987);}),_0x10f8ea[_0x2c24b1(0x192)](_0x2c24b1(0x26c),function(){const _0x3fbdda=_0x2c24b1;this[_0x3fbdda(0x2fb)]['backgroundColor']=_0x3fbdda(0x2ed);},{'passive':!![]}),_0x10f8ea[_0x2c24b1(0x192)](_0x2c24b1(0x236),function(){this['style']['backgroundColor']='';},{'passive':!![]}),_0x10f8ea[_0x2c24b1(0x192)](_0x2c24b1(0x238),function(){const _0x2afec3=_0x2c24b1;this['style'][_0x2afec3(0x242)]='';},{'passive':!![]});}),setTimeout(()=>{const _0x365c94=_0x25ee3b,_0x1ab96f=document['querySelectorAll'](_0x365c94(0x1b4));console[_0x365c94(0x2b5)](_0x365c94(0x270),_0x1ab96f[_0x365c94(0x26f)]),_0x1ab96f[_0x365c94(0x20f)]((_0x4713ef,_0x3f43d8)=>{const _0x584401=_0x365c94,_0x31bac2=_0x4713ef[_0x584401(0x2f6)](_0x584401(0x1da));_0x31bac2&&(console[_0x584401(0x2b5)](_0x584401(0x1cc)+_0x3f43d8+_0x584401(0x220)+_0x4713ef[_0x584401(0x1a8)]['trim']()+_0x584401(0x1ee)+_0x31bac2),_0x4713ef[_0x584401(0x2e3)](_0x584401(0x1da)),_0x4713ef[_0x584401(0x192)](_0x584401(0x26c),function(_0x139dbf){const _0x49410b=_0x584401;return _0x139dbf[_0x49410b(0x2cf)](),_0x139dbf[_0x49410b(0x256)](),console['log'](_0x49410b(0x191),this['textContent']['trim']()),ejecutarFuncionDesdeString(_0x31bac2),setTimeout(cerrarTodosMenus,0x64),![];},{'passive':![]}),_0x4713ef['addEventListener'](_0x584401(0x1ce),function(_0x2a6059){const _0x235b98=_0x584401;_0x2a6059[_0x235b98(0x2cf)](),_0x2a6059['stopPropagation'](),console[_0x235b98(0x2b5)](_0x235b98(0x1fe),this[_0x235b98(0x1a8)]['trim']()),ejecutarFuncionDesdeString(_0x31bac2),setTimeout(cerrarTodosMenus,0x64);}),_0x4713ef[_0x584401(0x192)](_0x584401(0x26c),function(){const _0x3c8845=_0x584401;this[_0x3c8845(0x2fb)][_0x3c8845(0x242)]=_0x3c8845(0x2ed);},{'passive':!![]}),_0x4713ef[_0x584401(0x192)](_0x584401(0x236),function(){const _0x50cc14=_0x584401;this['style'][_0x50cc14(0x242)]='';},{'passive':!![]}));});},0xc8);}function ejecutarFuncionDesdeString(_0x2c41b5){const _0x3aa36c=a0_0x25aed9;console[_0x3aa36c(0x2b5)](_0x3aa36c(0x2c0),_0x2c41b5);try{if(_0x2c41b5[_0x3aa36c(0x20b)](_0x3aa36c(0x227)))typeof toggleBarrerasLaterales===_0x3aa36c(0x26e)&&toggleBarrerasLaterales();else{if(_0x2c41b5[_0x3aa36c(0x20b)](_0x3aa36c(0x2f1))){const _0x1b72e7=_0x2c41b5[_0x3aa36c(0x24f)](/'([^']+)'/);_0x1b72e7&&typeof setModoVisualizacion===_0x3aa36c(0x26e)&&setModoVisualizacion(_0x1b72e7[0x1]);}else{const _0x4caf83=new Function(_0x3aa36c(0x276)+_0x2c41b5[_0x3aa36c(0x28e)](/^.*?\(/,_0x3aa36c(0x199))[_0x3aa36c(0x28e)](/\)$/,')'));_0x4caf83()[_0x3aa36c(0x294)](window);}}}catch(_0x3a8e6e){console[_0x3aa36c(0x290)](_0x3aa36c(0x269),_0x3a8e6e,_0x3aa36c(0x289),_0x2c41b5);}}function a0_0x6a98(){const _0x259b6d=['Body','frontal','gpioLetra','STOP','1000','SetAllSparklesRGBBlock','devolverOtroExtremo','String:','colour11','split','LDRs','body','replace','SmartDigitsOffBlock','error','_then\x20','Habilitando\x20menú\x20táctil...','SetSprakleRGBBlock','call','_degrees\x20','isArray','Basic\x20colours:','_set\x20sparkle','none','colour5','_wait\x20until','SetSparkleMatrixBlock','MotorBlock','colour10','actualizarCoordenadas','calcularVerticesBloque','Archivo','BUZZ','Oscillator','address','4138938rAQtza','Red:','Custom\x20colours:','h\x20\x20','*#000000','120','1HI','fromCharCode','SW2','contextmenu','IncreaseBlock','colour16','speed','_let','innerWidth','No\x20se\x20encontró\x20el\x20menú','log','SmartDigitsBlock','setDecomp','AÑADIR\x20BARRERA','OrBlock','SmartPitchOffBlock','SetSprakleBlock','angle','_digits\x20crumb\x20on','NotBlock','colour6','Ejecutando:','touches','dibujoSub','_servo','trim','update','Sin_titulo','Distancia','EqualityBlock','AÑADIR\x20OBSTÁCULO','_else\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','left','RandomBlock','webkitTouchCallout','AnalogueInput','preventDefault','color','TurnAllSpraklesOffBlock','valorLetra','_\x20\x20\x20\x20Program\x20Start\x20\x20','AssignmentBlock','SetTempoBlock','circuito.svg','assets/images/UltrasonidosFrontal.png','100%','InputButton','DistanceBlock','WaitMSBlock','29114810pMahFF','.png','zIndex','add','calculoGrosorBucle','colour15','IfBlock','removeAttribute','noTint','11nCfvZX','floor','tipo','_E:','tempo','border','AddNewVariableButton','grosorBloque','#3a3d41','REVERSE','SetSprakleBatonBlock','gpioConectado','setModoVisualizacion','round','actualizarValor','colour12','GreaterThanBlock','getAttribute','\x20seg','red','o75','_motor','style','1457967jzhsir','_\x20Smart\x20','BotonZoom+','colour4','Touchstart\x20en\x20item:','addEventListener','clear','_off\x20','DivideBlock','Click\x20en\x20botón:','\x20cm','colour3','function(','_\x20Sparkles\x20','pin','SmartPitchNoteBlock','WROfutureEngenieersConMeta.svg','horizontal','valorNumerico','bucleSiguiente','DigitalInputBlock','MultiplyBlock','_\x20\x20\x20\x20Add\x20new\x20variable\x20\x20\x20\x20','value','DelButton','top','colour17','textContent','LINE2','xDato','_turn\x20all\x20sparkles\x20off','2280432fMTICG','HIGH','querySelector','ejecutar','_\x20Operators\x20','dibujar','anterior','ServoOffBlock','.dropdown-item','1904kdXbOc','assets/images/bulb.png','assets/images/logoAzzaiteros.png','DoUntilBlock','texto','max','ancho','assets/images/botones/boton','calculoDimensiones','colour','assets/images/CrumblebotXLIcono2.png','grosorTotal','fill','G#/Ab','_and','_\x20distance\x20(cm)\x20T:','translate','HIGHEST','5MIDDLE','larg','DigitalOutputBlock','blue','create','Item\x20','4270º','click','rarg','_:\x20display','Add\x20to\x20Custom\x20Colours','DoForeverBlock','130eNPqyS','_Off','z-index','o10','scale','_\x20New\x20Var\x20','VariableBlock','onclick','4695TRUzLF','ElseBlock','_\x20✏️\x20','center','colour2','RenameButton','_\x20milliseconds','_times','_is','colour20','_do\x20until\x20','_to\x20','3FORWARD','brush','Delete\x20block','nombre','Configuración','WROfutureEngenieers.svg','target','\x22\x20->\x20','colour8','_temperature\x20on','Bodies','_set\x20matrix\x20','colour23','AddBlock','_\x20Variables\x20','padre','resize','o440','push','🔧\x20Forzando\x20redibujado\x20completo...','ServoBlockType','min','valorOutput','Click\x20en\x20item:','SparklesButton','note','touchAction','Duplicate\x20blocks','menu-bar','potMotor','TurnSprakleOffBlock','auto','touchmove','_\x20Control\x20','text-align','_degrees\x20type:','includes','colour13','18csTNhk','rebote.svg','forEach','count','conectorElemento','pointerEvents','_\x20in\x20Cº','Sat:','Cronómetro','1px\x20solid\x20grey','position','WaitUntilBlock','motor','DoTimesBlock','LOW','_:\x20play','width','canvas','_Hz\x20tone',':\x20\x22','_seconds','Cancel','Common','SmartPitchBlock','map','*#FF0000','toggleBarrerasLaterales','gravity','SW1','world','jumperAsociado','arc','LIGHT1','getElementById','OperatorsButton','_turn\x20sparkle','elt','ServoBlock','trig','vertical','_analogue','touchend','Define\x20Custom\x20Colours>>','touchcancel','NotEqualBlock','dato','categoria','A#/Bb','_by','SmartForceZeroBlock','conditional','_pitch\x20on','SmartTemperatureBlock','backgroundColor','colour18','Composite','_or','colour1','assets/images/escenarios/','D#/Eb','3575272ZzNofO','SG92R','o100','tint','WhenRunBlock','amp','match','action','colour0','noStroke','image','SubBlock','freq','stopPropagation','octave','abs','LOWEST','Green:','colour22','ultrasonidosConectado','get','siguiente','state','LIGHT2','AndBlock','AxTexto','absolute','255','_set','loading','height','ceil','Error\x20ejecutando\x20función:','_wait','fixed','touchstart','LessThanBlock','function','length','Procesando\x20items\x20dropdown:','DecreaseBlock','_at\x20','valorElemento','filter','rayas1.svg','return\x20','green','Procesando\x20botones:','FORWARD','11845zwToVW','ControlButton','imageMode','noFill','bucle','pop','SetAllSpraklesBlock','assets/images/Ultrasonidos.png'];a0_0x6a98=function(){return _0x259b6d;};return a0_0x6a98();}function ejecutarFuncionDesdeString(_0x24ee41){const _0x1b770d=a0_0x25aed9;try{const _0x23bd65=_0x24ee41[_0x1b770d(0x24f)](/([^(]+)\(([^)]*)\)/);if(_0x23bd65){const _0x57faf7=_0x23bd65[0x1][_0x1b770d(0x2c4)](),_0x339fb1=_0x23bd65[0x2][_0x1b770d(0x28b)](',')[_0x1b770d(0x225)](_0x5ce561=>_0x5ce561[_0x1b770d(0x2c4)]()[_0x1b770d(0x28e)](/['"]/g,''))['filter'](_0x319998=>_0x319998);typeof window[_0x57faf7]===_0x1b770d(0x26e)&&window[_0x57faf7](..._0x339fb1);}}catch(_0x3b0bc1){console[_0x1b770d(0x290)](_0x1b770d(0x269),_0x3b0bc1);}}function comprobarBuzzer(){const _0x4f31d9=a0_0x25aed9;if(elemento[0x3][_0x4f31d9(0x211)]!=null){let _0x566204=elemento[0x3][_0x4f31d9(0x211)][_0x4f31d9(0x22b)][_0x4f31d9(0x288)](elemento[0x3][_0x4f31d9(0x211)]);if(_0x566204&&_0x566204[_0x4f31d9(0x2f0)]!=null){let _0x1631dd=_0x566204[_0x4f31d9(0x2f0)]['letraAsociada'],_0x4ab1b9=max(_0x1631dd[_0x4f31d9(0x1fd)],_0x1631dd[_0x4f31d9(0x2d2)]);if(_0x4ab1b9>0x7f)return osc['amp'](0.5),!![];else{if(_0x4ab1b9<0x80)return osc[_0x4f31d9(0x24e)](0x0),![];}}}}function centrarCodigo(){const _0x53e989=a0_0x25aed9;for(let _0x8219dc of codigo){let _0x8b956c=0x0,_0xcecdf6=0x0,_0x204bcb=codigo[_0x53e989(0x26f)];for(let _0x1ae37a of codigo){_0x8b956c+=_0x1ae37a['x'],_0xcecdf6+=_0x1ae37a['y'];}let _0x275d00=_0x8b956c/_0x204bcb,_0x329547=_0xcecdf6/_0x204bcb;for(let _0x486000 of codigo){_0x486000['x']-=_0x275d00,_0x486000['y']-=_0x329547;}}panCodigoX=0x0,panCodigoY=0x0;}function ajustarCanvas(){const _0x4e2338=a0_0x25aed9,_0x40b936=document['querySelector'](_0x4e2338(0x21e)),_0x1d6605=document['getElementById'](_0x4e2338(0x203));_0x40b936&&_0x1d6605&&(_0x40b936[_0x4e2338(0x2fb)]['position']=_0x4e2338(0x263),_0x40b936[_0x4e2338(0x2fb)][_0x4e2338(0x1a6)]=ALTURA_MENU+'px',_0x40b936[_0x4e2338(0x2fb)][_0x4e2338(0x2cb)]='0',_0x40b936[_0x4e2338(0x2fb)]['zIndex']='1',_0x40b936['style'][_0x4e2338(0x212)]=_0x4e2338(0x206),_0x1d6605[_0x4e2338(0x2fb)]['position']=_0x4e2338(0x26b),_0x1d6605[_0x4e2338(0x2fb)][_0x4e2338(0x1a6)]='0',_0x1d6605[_0x4e2338(0x2fb)][_0x4e2338(0x2cb)]='0',_0x1d6605[_0x4e2338(0x2fb)][_0x4e2338(0x2de)]=_0x4e2338(0x286),_0x1d6605['style']['pointerEvents']=_0x4e2338(0x206),_0x1d6605[_0x4e2338(0x2fb)][_0x4e2338(0x21d)]=_0x4e2338(0x2d8),_0x1d6605[_0x4e2338(0x2fb)]['height']=ALTURA_MENU+'px',console['log']('Canvas\x20y\x20menú\x20ajustados:',{'canvasZ':_0x40b936['style']['zIndex'],'menuZ':_0x1d6605['style']['zIndex'],'menuHeight':_0x1d6605[_0x4e2338(0x2fb)][_0x4e2338(0x267)]}));}
+let nombreArchivoActual='Sin_titulo';
+let abiertoCrumble=false;
+// ***** Normbres de los últimos archivos externos *****
+let ultimoArchivoAza = null;
+let ultimoArchivoCrm = null;
+// ***** BOTONES DEL MENÚ SUPERIOR *****
+let numBotones=8;
+let boton = [];
+let xBoton = [];
+let yBoton = [];
+let xBloqueCategoria = [];
+let yBloqueCategoria = [];
+// ***** ARRAYS PARA BOTONES *****
+const BOTON_MENU = [
+  ["InputButton", "o", "_ Input/Output "],
+  ["SparklesButton", "o", "_ Sparkles "],
+  ["ControlButton", "o", "_ Control "],
+  ["VariablesButton", "o", "_ Variables "],
+  ["OperatorsButton", "o", "_ Operators "],
+  ["SmartButton", "o", "_ Smart "],
+];
+
+const BOTON_DEL = ["DelButton", "o", "_ X "];
+const BOTON_RENAME = ["RenameButton", "o", "_ ✏️ "];
+const BOTON_ZOOM_MAS = ["BotonZoom+", "o", "_+"];
+const BOTON_ZOOM_MENOS = ["BotonZomm-", "o", "_-"];
+const BOTON_VARIABLE = ["VariableBlock", "o", "_ New Var "];
+const ANCHO_BOTON = 24;
+// ***** ARRAYS PARA LOS SELECTABLES DE LOS BLOQUES *****
+const LISTA = [
+  ["A", "B", "C", "D", "", "", "", "", "", "", "", ""],
+  ["HI", "LO", "", "", "", "", "", "", "", "", "", ""],
+  ["1", "2", "", "", "", "", "", "", "", "", "", ""],
+  ["FORWARD", "REVERSE", "STOP", "", "", "", "", "", "", "", "", ""],
+  ["270º", "SG92R", "", "", "", "", "", "", "", "", "", ""],
+  ["MIDDLE", "HIGH", "HIGHEST", "LOWEST", "LOW", "", "", "", "", "", "", ""],
+  ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]
+];
+
+// ***** ARRAY PARA LA NOTACIÓN DE BLOQUES Y ATRIBUTOS DE LOS ARCHIVOS CRUMBLE *****
+const NOTACION_CRUMBLE = [
+  // Categoría 0
+  [
+    ["WhenRunBlock"],
+    ["DigitalOutputBlock", "pin", "state"],
+    ["MotorBlock", "motor", "action", "speed"],
+    ["DigitalInputBlock", "pin", "state"],
+    ["AnalogueInput", "pin"],
+    ["ServoBlock", "pin", "angle"],
+    ["ServoBlockType", "pin", "angle", "type"],
+    ["ServoOffBlock", "pin"],
+    ["DistanceBlock", "trig", "echo"],
+  ],
+  // Categoría 1
+  [
+    ["SetSprakleBlock", "address", "colour"],
+    ["TurnSprakleOffBlock", "address"],
+    ["SetAllSpraklesBlock", "colour"],
+    ["TurnAllSpraklesOffBlock"],
+    ["SetSprakleRGBBlock", "address", "red", "green", "blue"],
+    ["SetAllSparklesRGBBlock", "red", "green", "blue"],
+
+    // ✅ Baton (8 LEDs)
+    ["SetSprakleBatonBlock",
+      "brush",
+      "colour0","colour1","colour2","colour3",
+      "colour4","colour5","colour6","colour7"
+    ],
+
+    // ✅ Matrix (5x5 = 25 LEDs)
+    ["SetSparkleMatrixBlock",
+      "brush",
+      "colour0","colour1","colour2","colour3","colour4",
+      "colour5","colour6","colour7","colour8","colour9",
+      "colour10","colour11","colour12","colour13","colour14",
+      "colour15","colour16","colour17","colour18","colour19",
+      "colour20","colour21","colour22","colour23","colour24"
+    ]
+  ],
+  // Categoría 2
+  [
+    ["WaitBlock", "time"],
+    ["WaitMSBlock", "time"],
+    ["WaitUntilBlock", "conditional"],
+    ["IfBlock", "conditional"],
+    ["IfElseBlock", "conditional"],
+    [],
+    ["DoUntilBlock", "conditional"],
+    ["DoForeverBlock", "conditional"],
+    ["DoTimesBlock", "count"]
+  ],
+  // Categoría 3
+  [
+    ["AssignmentBlock", "larg", "rarg"],
+    ["IncreaseBlock", "larg", "rarg"],
+    ["DecreaseBlock", "larg", "rarg"]
+  ],
+  // Categoría 4
+  [
+    ["AddBlock", "larg", "rarg"],
+    ["SubBlock", "larg", "rarg"],
+    ["MultiplyBlock", "larg", "rarg"],
+    ["DivideBlock", "larg", "rarg"],
+    ["EqualityBlock", "larg", "rarg"],
+    ["NotEqualBlock", "larg", "rarg"],
+    ["LessThanBlock", "larg", "rarg"],
+    ["GreaterThanBlock", "larg", "rarg"],
+    ["AndBlock", "larg", "rarg"],
+    ["OrBlock", "larg", "rarg"],
+    ["NotBlock", "larg", "rarg"],
+    ["RandomBlock", "min", "max"]
+  ],
+  // Categoría 5
+  [
+    ["SmartDigitsBlock", "pin", "value"],
+    ["SmartDigitsOffBlock", "pin"],
+    ["SmartTemperatureBlock", "pin"],
+    ["SmartPitchBlock", "pin", "value"],
+    ["SmartPitchOffBlock", "pin"],
+    ["SmartPitchNoteBlock", "pin", "octave", "note", "length"],
+    ["SetTempoBlock", "tempo"],
+    ["SmartForceZeroBlock", "pin"],
+    ["SmartForceBlock", "pin"]
+  ]
+];
+
+// ***** ARRAY PARA LA CREACIÓN DE BLOQUES DE PROGRAMACIÓN *****
+const t = [
+  // Categoría 0
+  [
+    ["WhenRunBlock", "_", "_    Program Start  "],
+    ["DigitalOutputBlock", "_", "_set", "0A", "_", "1HI", "_"],
+    ["MotorBlock", "_", "_motor", "21", "_", "3FORWARD", "_at ", "o75", "_%"],
+    ["DigitalInputBlock", "h", "_", "0A", "_is", "1HI", "_"],
+    ["AnalogueInput", "o", "_analogue", "0A", "_"],
+    ["ServoBlock", "_", "_servo", "0A", "_", "o0", "_degrees "],
+    ["ServoBlockType", "_", "_servo", "0A", "_", "o0", "_degrees type:", "4270º", "_"],
+    ["ServoOffBlock", "_", "_servo", "0A", "_Off"],
+    ["DistanceBlock", "o", "_ distance (cm) T:", "0A", "_E:", "0A", "_"]
+  ],
+  // Categoría 1
+  [
+    ["SetSprakleBlock", "_", "_set sparkle", "o0", "_to ", "*#FF0000", "_"],
+    ["TurnSprakleOffBlock", "_", "_turn sparkle", "o0", "_off "],
+    ["SetAllSpraklesBlock", "_", "_set all sparkles to", "*#FF0000", "_"],
+    ["TurnAllSpraklesOffBlock", "_", "_turn all sparkles off"],
+    ["SetSprakleRGBBlock", "_", "_set", "o0", "_to ", "o0", "_", "o0", "_", "o0", "_"],
+    ["SetAllSparklesRGBBlock", "_", "_set all sparkles to", "o0", "_", "o0", "_", "o0", "_"],
+    ["SetSprakleBatonBlock", "_", "_set baton ", "*#FF0000",
+    "*#000000","*#000000","*#000000","*#000000","*#000000","*#000000","*#000000","*#000000"],
+    ["SetSparkleMatrixBlock", "_", "_set matrix ", "*#FF0000",
+      "*#000000","*#000000","*#000000","*#000000","*#000000",
+      "*#000000","*#000000","*#000000","*#000000","*#000000",
+      "*#000000","*#000000","*#000000","*#000000","*#000000",
+      "*#000000","*#000000","*#000000","*#000000","*#000000",
+      "*#000000","*#000000","*#000000","*#000000","*#000000"]
+  ],
+  // Categoría 2
+  [
+    ["WaitBlock", "_", "_wait", "o1.0", "_seconds"],
+    ["WaitMSBlock", "_", "_wait", "o100", "_ milliseconds"],
+    ["WaitUntilBlock", "_", "_wait until", "h  ", "_"],
+    ["IfBlock", "_", "_if", "h", "_then "],
+    ["IfElseBlock", "_", "_if", "h", "_then "],
+    ["ElseBlock", "_", "_else           "],
+    ["DoUntilBlock", "_", "_do until ", "h", "_"],
+    ["DoForeverBlock", "_", "_do forever"],
+    ["DoTimesBlock", "_", "_do", "o10", "_times"]
+  ],
+  // Categoría 3
+  [
+    ["AssignmentBlock", "_", "_let", "o", "_=", "o0", "_"],
+    ["IncreaseBlock", "_", "_increase", "o", "_by", "o1", "_"],
+    ["DecreaseBlock", "_", "_decrease", "o", "_by", "o1", "_"],
+    ["AddNewVariableButton", "o", "_    Add new variable    "]
+  ],
+  // Categoría 4
+  [
+    ["AddBlock", "o", "_", "o0", "_+", "o0", "_"],
+    ["SubBlock", "o", "_", "o0", "_-", "o0", "_"],
+    ["MultiplyBlock", "o", "_", "o0", "_*", "o0", "_"],
+    ["DivideBlock", "o", "_", "o0", "_/", "o0", "_"],
+    ["EqualityBlock", "h", "_", "o0", "_=", "o0", "_"],
+    ["NotEqualBlock", "h", "_", "o0", "_≠", "o0", "_"],
+    ["LessThanBlock", "h", "_", "o0", "_<", "o0", "_"],
+    ["GreaterThanBlock", "h", "_", "o0", "_>", "o0", "_"],
+    ["AndBlock", "h", "_", "h0", "_and", "h0", "_"],
+    ["OrBlock", "h", "_", "h0", "_or", "h0", "_"],
+    ["NotBlock", "h", "_ not", "h", "_"],
+    ["RandomBlock", "o", "_ random", "o0", "_to", "o10", "_"]
+  ],
+  // Categoría 5
+  [
+    ["SmartDigitsBlock", "_", "_digits crumb on", "0A", "_: display", "o0", "_ "],
+    ["SmartDigitsOffBlock", "_", "_digits crumb on", "0A", "_: turn off"],
+    ["SmartTemperatureBlock", "_", "_temperature on", "0A", "_ in Cº"],
+    ["SmartPitchBlock", "_", "_pitch on", "0A", "_: play", "o440", "_Hz tone"],
+    ["SmartPitchOffBlock", "_", "_pitch on", "0A", "_: turn off"],
+    ["SmartPitchNoteBlock", "_", "_pitch on", "0A", "_: play", "5MIDDLE", "_", "6C", "_ for", "o1", "_ beats"]
+  ]
+];
+
+const numCategorias = t.length; // Obtiene el nº de categorías del array t
+// ***** RESOLUCIÓN Y ORIENTACIÓN DE PANTALLA *****
+let LOGIC_WIDTH;
+let LOGIC_HEIGHT;
+let orientacionActual;
+let windowWidthActual;
+let windowHeightActual;
+let escalaDispositivo=1;
+// ***** MENÚ y MODO *****
+menu = 0;
+modo = 5;
+let estaAbierto;
+// ***** FUENTE DE TEXTO *****
+let Font1;
+let grosorFont;
+// Variables generales relacionadas con el Mouse
+let offsetX, offsetY;
+let transformedX, transformedY; // Coordenadas de lo seleccionado en el sistema transformado (con pan y zoom)
+let transformedXbasico, transformedYbasico;
+let mouseOrigenX, mouseOrigenY; // Almacena las coordenadas del puntero del ratón de un elemento al hacer click para su arrastre
+// ***** BLOQUES *****
+let codigo = [];
+let codigoMenu = [];
+let codigoCategoria = [];
+let botonesVariables = [];
+let bloquesSeleccionados = []; // Los bloques en esta LISTA se redibujan siempre
+let grosorBloquesSeleccionados;
+let bloquesNoSeleccionados = []; // Los bloques en esta LISTA son estáticos y se redibujan en ocasiones
+let bloquesVirtuales = [];
+let codigoVariables = [];
+let botonCrearVariable;
+let bloquesStart = []; // Guarda los bloques PROGRAM START existentes en el escenario
+let bloqueStartSeleccionado;//Bloque estar seleccionado para su ejecución
+let bloqueEjecutando;//Bloque que se está ejecutando en un momento dado
+let numBloques = []; // Para almacenar el número de bloques que tiene cada categoría
+let colorBloq = []; // Array de colores para los bloques en función de su categoría
+let desplegableBloque = false;
+let bloqueSeleccionado = null; // Almacena el bloque que está seleccionado para el desplazamiento
+const SEPARACION_BLOQUES_MENU = 8;
+let seleccion = null, seleccion2 = null, seleccion3 = null, seleccion4 = null; // Sirve para determinar qué bloque va a ser seleccionado
+let seleccionSubBloque; // Indica el índice de subBloque seleccionado dentro de un bloque
+let xFlecha, yFlecha; // Coordenadas de la flecha que indica el bloque 
+let xDesplegable, yDesplegable; // Coordenadas del desplegable para duplicar/borrar
+let inicioDesplazarBloque = false; // Para detectar si un bloque sobre el que hemos pinchado ha sido desplazado
+// ***** MENÚS *****
+const BORDE_MENU = 5;//Borde extra del menú
+const ALTO_MENU_SUPERIOR = 35;//Alto del menú SUPERIOR que contiene los botones del MODO y del ZOOM
+let anchoMenu = [];//Ancho del MENÚ IZQUIERDO
+let altoMenu = [];//Alto del MENÚ IZQUIERDO
+let anchoRect=0;//Anncho del recuadro que contiene el MENÚ IZQUIERDO
+let panningMenuBloques = false;
+let panMenuBloquesY = 0;//PANEADO VERTICAL de los bloques del MENÚ IZQUIERDO
+let panStartMenuBloquesY = 0;
+const ALTO_COMIENZO_BLOQUES = 110;//Coordenada en la que empiezan los bloques del MENÚ IZQUIERDO
+let input; //Cuadro de texto para modificar valores de los bloques del escenario
+// ***** PANEADO Y ZOOM EN EL MODO EDICIÓN DE BLOQUES *****
+let panCodigoX = 0, panCodigoY = 0;
+let panningCodigo = false;
+let panStartCodigoX = 0, panStartCodigoY = 0;
+let zoomCodigo = 1.0;
+// ***** PANEADO Y ZOOM EN EL MODO SIMULACIÓN *****
+let panSimulacionX = 0, panSimulacionY = 0;
+let panStartSimulacionX = 0, panStartSimulacionY = 0;
+let panningSimulacion = false;
+let zoomSimulacion = 0.5;
+// ***** PANEADO Y ZOOM EN EL MODO CONFIGURACIÓN *****
+let panConfiguracionX = 0, panConfiguracionY = 0;
+let panningConfiguracion = false;
+let panStartConfiguracionX = 0, panStartConfiguracionY = 0;
+let zoomConfiguracion = 0.75;
+// ***** FÍSICAS *****
+const Engine = Matter.Engine;
+const World = Matter.World;
+const Bodies = Matter.Bodies;
+const Body = Matter.Body;
+const Vertices = Matter.Vertices;
+const Composite = Matter.Composite;
+let engine, world;
+let robot;
+let fisicaActiva = true;
+let p5Canvas;  // Variable para guardar el canvas
+// ***** ESCENARIO *****
+let fondo; // Imagen del fondo para el modo de SIMULACIÓN
+let nombreFondo = "";
+let anchoTapete = 2362;
+let altoTapete = 1143;
+let anchoMundo = 8000;
+let altoMundo = 8000;
+// ***** ROBOT *****
+let desplazandoRobot = false;
+let robotSeleccionado = false;
+let robotPequeño;
+let robotPequeñoUltrasonidos;
+let robotGrande;
+let robotVisible = true;
+const LARGO_IMAGEN_ROBOT = 257;
+const ANCHO_IMAGEN_ROBOT = 164;
+const ANCHO_ROBOT = 645;
+const ALTO_ROBOT = 600;
+let CrumX, CrumY;//Coordenadas del robot mientras lo estamos desplazando con el ratón
+let CrumblebotAnteriorX = 0, CrumblebotAnteriorY = 0;
+// Para el movimiento del robot
+const MAX_SPEED = 5000;
+const MAX_WHEEL_SPEED = 500;
+// ***** JUMPER *****
+let jumpers = [];
+let jumperSeleccionado = null;
+// ***** CABLES *****
+let conector = [];
+let conectorSeleccionado = null;
+// ***** GPIOS *****
+let conectorGPIO = [];
+let gpio = [];
+let elemento = [];
+let letraGPIO = [];
+let letrasGPIOs = ['A', 'B', 'C', 'D'];
+let nomenclaturaElementos = [];
+// ***** OBSTÁCULOS *****
+let obstaculo = [];
+let laterales = [];
+let lateralesVisibles=true;
+let obstaculoInicio = [];
+let obstaculoDesplazando = null;
+let obstaculoSeleccionado = null;
+let offsetAngulo = 0;
+let anguloInicial = 0;
+let transformedObstaculoX = 0, transformedObstaculoY = 0;
+let RectX, rectY; //Coordenadas del obstáculo cuando lo estamos desplazando con el ratón
+// ***** ULTRASONIDOS *****
+let ultrasonic;
+const ANCHO_ULTRASONIC = 200;
+const ALTO_ULTRASONIC = 105;
+let ULTRASONIC_X = 0, ULTRASONIC_Y = 0;
+let ultrasonidos;
+const ANCHO_ULTRASONIDOS = 330;
+const ALTO_ULTRASONIDOS = 76;
+let ULTRASONIDOS_X = 0, ULTRASONIDOS_Y = 0;
+let radio = 0;
+let ruidoTiempo = 0;       // variable global que evoluciona
+const ruidoVelocidad = 0.05;  // controla la rapidez del temblor
+const ruidoIntensidad = 24;    // amplitud del “jitter” de la onda
+let anguloOnda = 0;
+// ***** SENSOR REFLEXIVO B/N *****
+const DIST_SENSOR_BN = 436.68 * 150 / 590;
+const ANGULO_SENSOR_BN = 0.221;
+// ***** SENSOR LDR PARA CAPTAR LA LUZ AMBIENTAL *****
+const DIST_LDR = 506.41 * 150 / 590;
+const ANGULO_LDR = 0.489;
+// ***** LEDS *****
+let colorLED = new Array(8);
+let ledsActivos = 0;
+// ***** ZUMBADOR *****
+// NOTA: p5.js tiene su propia librería de sonido
+// let sine;
+let isBeeping = false;
+// ***** BOMBILLA *****
+let bulb;
+let anchoBulb = 0, altoBulb = 0;
+let light;
+let bulbX = 0, bulbY = 0;
+let desplazandoBulb = false;
+// ***** HILO DE EJECUCIÓN *****
+let ejecutando = false;
+let inicio = 0;
+let miliSegundos = 0;
+let esperarUnCiclo = false;
+let saltoIfElse = false;
+let movidoDuranteEjecucion = false;
+let inicioCrono=0;
+let Crono = 0;
+let Distancia = 0;
+// ***** SELECCIÓN DE COLOR *****
+let x = 0, y = 0;
+let desplazandoVentanaColor = false;
+let currentColor;
+let colorPickerOpen = false;
+let customColorActivo = false;
+let BASIC_COLOR =[];
+let BASIC_COLORSeleccionado = 0;
+let customColorSeleccionado = 0;
+let HSLimage;
+const PICKER_X = 220;
+const PICKER_Y = 200;
+const ANCHO_PICKER = 180;
+const ALTO_PICKER = 180;
+const ANCHO_MARCO = PICKER_X + ANCHO_PICKER + 30;
+const ALTO_MARCO = 310;
+let hue = 0, saturation = 0, brightness = 0;
+let customColor = new Array(16);
+let rgbInputs = [];
+let hsbInputs = [];
+let mouseColorX = 0, mouseColorY = 0;
+// ***** SELECCIÓN DE TAPETE *****
+let thumbnails = [];
+let anchoThumbnail = 0, altoThumbnail = 0;
+let imageFiles = [];
+let imageNames = [];
+let xPos = [], yPos = [];
+let offsetYBarra = 0;
+let xPosStart = 0;
+let indiceTapeteSeleccionado = 0;
+let draggingScrollBar = false;
+let dragStartY = 0;
+let scrollBarY = 0;
+let scrollBarHeight = 0;
+let totalThumbnailsHeight = 0;
+// ***** MENSAJES *****
+let inicioMensaje = 0;
+let mensaje = "";
+// ***** CUADROS DE EDICIÓN DE TEXTO/DATOS *****
+let bloqueEditando = null;
+let subBloqueEditando = 0;
+let maximoCaracteres = 0;
+let textoTemporal = "";
+// ***** BUFFERS *****
+let bufferEfectos;
+let bufferMenuSuperior;
+// ***** ESCALA GENERAL *****
+let escalaBase = calcularEscala();
+// ***** SONIFO ******
+let osc;
+//Para incrementos
+let inc;
+// Borrar al finalizar el proyecto
+let cont = 0;
+
+thumbnailsPorFila = 4;
+espacioEntreThumbs = 20;
+anchoThumbnail = 150;
+altoThumbnail = 150;
+let archivosSVG = [
+  "ángulos.svg",
+  "circuito.svg", 
+  "óvalo.svg",
+  "rayas1.svg",
+  "rayas2.svg", 
+  "rebote.svg",
+];
+let resultadoSeleccion;
+let logoPath = 'assets/images/logoAzzaiteros.png';
+
+function preload() {
+  Matter = window.Matter;
+  robotGrande=loadImage('assets/images/CrumblebotXL.png');
+  robotPequeño=loadImage('assets/images/CrumblebotXLIcono.png');
+  robotPequeñoUltrasonidos=loadImage('assets/images/CrumblebotXLIcono2.png');
+  ultrasonidos=loadImage('assets/images/Ultrasonidos.png');
+  ultrasonic=loadImage('assets/images/UltrasonidosFrontal.png');
+  bulb=loadImage('assets/images/bulb.png');
+  HSLimage=loadImage('assets/images/HSL.png');
+  //logo=loadImage(logoPath);
+  boton = new Array(numBotones);
+  for (let i = 0; i < numBotones; i++) {
+    boton[i] = loadImage(`assets/images/botones/boton${i}.png`);
+  }
+  cargarTapetes();
+}
+
+let cargadas = 0;
+
+function cargarTapetes() {
+  thumbnails = new Array(archivosSVG.length);
+  cargadas = 0;
+  for (let i = 0; i < archivosSVG.length; i++) {
+    let filename = archivosSVG[i];
+    loadImage(
+      "assets/images/escenarios/" + filename,
+      img => {
+        let thumb = img.get(); // clona la imagen
+        thumb.resize(150, 150);
+        thumbnails[i] = thumb;
+
+        cargadas++;
+        if (cargadas === archivosSVG.length) {
+          calcularThumbnails();
+        }
+      }
+    );
+  }
+  indiceTapeteSeleccionado = -1;
+  offsetYBarra = 0;
+}
+
+
+function calculateLogicScale() {
+  // Escalar lógica a tamaño de pantalla
+  //escalaBase = max(windowWidth / LOGIC_WIDTH, windowHeight / LOGIC_HEIGHT)*escalaDispositivo;
+  //escalaBase = (windowHeight / LOGIC_HEIGHT)*escalaDispositivo;
+  //escalaBase = max(windowWidth / LOGIC_WIDTH, windowHeight / LOGIC_HEIGHT)*escalaDispositivo;
+  escalaBase = (windowWidth/LOGIC_WIDTH)*escalaDispositivo;
+  calcularThumbnails();
+  crearMenuSuperior();
+  if (bloqueEditando!=null) cerrarEdicionTexto();
+}
+
+function windowResized() {
+    // Si hay un input abierto, ignorar el resize (viene del teclado)
+  if (document.querySelector('input[type="text"]')) {
+    console.log('Input abierto, ignorando resize');
+    return;
+  }
+  resizeCanvas(windowWidth, windowHeight- ALTURA_MENU);
+  windowWidthActual=windowWidth;
+  windowHeightActual=windowHeight;
+  //pixelDensity(displayDensity());
+  pixelDensity(1);
+  calculateLogicScale();
+  redraw();
+}
+
+let primerPlay = false;
+function setup() {
+  document.body.classList.add('loading');
+  appLista=false;
+  crearMenuHTML();
+  bufferMenuSuperior = createGraphics(windowWidth,ALTO_MENU_SUPERIOR);
+  bufferMenuSuperior.colorMode(RGB, 255);
+  //Crea un sonido de oscilador (timbre)
+  //Muy importante. Los audios en p5.js sólo pueden activarse con un evento
+  osc = new p5.Oscillator('sine');
+  osc.amp(0);
+  osc.freq(440);     // frecuencia (La)
+   // PRIMERO crear el canvas y guardarlo
+  p5Canvas = createCanvas(windowWidth, windowHeight - ALTURA_MENU);
+  pixelDensity(displayDensity());
+  // Deshabilitar menú contextual (usar p5Canvas.elt)
+  p5Canvas.elt.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    return false;
+  }); 
+  //Deshabilitar gestos de los dispositivos móviles con los dedos
+  deshabilitarGestosMóviles() 
+// Listener global en el canvas real
+  p5Canvas.elt.addEventListener('mousedown', () => {
+    cerrarMenus();
+  });
+  LOGIC_WIDTH = windowWidth;
+  LOGIC_HEIGHT = windowHeight - 50;
+  calculateLogicScale();
+  //pixelDensity(1);
+  smooth(8);
+  // Crear motor Matter.js
+  engine = Engine.create();
+  world = engine.world;
+  world.gravity.y = 0;
+  Matter.Common.setDecomp(decomp);
+  //***** INPUT *******/
+  input = createInput();
+  input.style('text-align', 'center');
+  input.style('border', '1px solid grey');
+  input.style('z-index', '10'); // asegurarse que está encima
+  input.style('outline', 'none');  // elimina el borde azul al foco
+  //***** ROBOT *****
+  for (let i = 0; i < 8; i++) {
+    colorLED[i] = null;
+  }
+  // Define las coordenadas de los LEDs
+  let angleLED = -46.5;
+  let xLED = new Array(8);
+  let yLED = new Array(8);
+  inc = 0;
+  for (let i = 0; i < 9; i++) {
+    angleLED -= 8.7;
+    if (i == 4) inc = -1;
+    else {
+      //colorLED[i + inc] = null;
+      xLED[i + inc] = 365 * cos(radians(angleLED));
+      yLED[i + inc] = 80 + 365 * sin(radians(angleLED));
+    }
+  }
+  angleLED = 43;
+  let AxLED = new Array(8);
+  let AyLED = new Array(8);
+  inc = 0;
+  for (let i = 0; i < 9; i++) {
+    angleLED -= 8.6;
+    if (i == 4) inc = -1;
+    else {
+      AxLED[i + inc] = 30 + 95 * cos(radians(angleLED));
+      AyLED[i + inc] = 95 * sin(radians(angleLED));
+    }
+  }
+  // Crea las instancias del robot
+  robot = new Robot(0, 0, xLED, yLED); // Crea la instancia del robot grande estático (modo CONFIGURACIÓN)
+  // Crear robot físico
+  robotFisico = new DifferentialRobot(0, 0, 264, 154, AxLED, AyLED);
+  Composite.add(world, robotFisico.body); // Asegúrate de añadir el .body
+  // DEFINE LOS COLORES DE LOS BLOQUES
+  colorBloq = [
+    color(0, 122, 255),    // Azul oscuro
+    color(88, 86, 214),    // Morado
+    color(255, 149, 0),    // Naranja
+    color(200, 110, 223),  // Violeta
+    color(76, 217, 100),   // Verde
+    color(16, 160, 160)    // Azul Turquesa
+  ];
+  //CONFIGURA LA FUENTE
+  textFont('Arial');
+  //***** BLOQUES *****
+  numBloques = new Array(numCategorias); // Para almacenar el número de bloques que tiene cada categoría
+  colorBloq = new Array(8); // Array de colores para los bloques en función de su categoría
+  // Configura los colores de cada categoría
+  colorBloq[0] = color(0, 122, 255); // Azul oscuro
+  colorBloq[1] = color(88, 86, 214); // Morado
+  colorBloq[2] = color(255, 149, 0); // Naranja
+  colorBloq[3] = color(200, 110, 223); // Violeta
+  colorBloq[4] = color(76, 217, 100); // Verde
+  colorBloq[5] = color(16, 160, 160); // Azul Turquesa 
+  //***** DIBUJO DE MENÚS *****
+  anchoMenu = new Array(numCategorias);
+  altoMenu = new Array(numCategorias); 
+  //***** OBSTÁCULOS *****
+  obstaculo = []; // LISTA in situ de obstáculos
+  obstaculoInicio = [];
+  if (fondo!=null && fondo!=undefined) {
+    anchoTapete=fondo.width;
+    altoTapete=fondo.height;
+  }
+  //Genera las barreras para los laterales del tapete
+  laterales.push(new Obstaculo(0,-altoTapete/2-10,anchoTapete+40,20,0,true));
+  laterales.push(new Obstaculo(0,altoTapete/2+10,anchoTapete+40,20,0,true));
+  laterales.push(new Obstaculo(-anchoTapete/2-10,0,20,altoTapete,0,true));
+  laterales.push(new Obstaculo(anchoTapete/2+10,0,20,altoTapete,0,true));  
+  //***** ULTRASONIDOS *****
+  ULTRASONIC_X = -ANCHO_ROBOT / 2 - ANCHO_ULTRASONIC / 2; // Coordenadas del sensor
+  ULTRASONIC_Y = 50 - ALTO_ROBOT / 2;
+  ULTRASONIDOS_X = 0; // Coordenadas del sensor
+  ULTRASONIDOS_Y = -ALTO_ROBOT / 2 + 85;
+  // Calcula el número de bloques de cada categoría
+  for (let i = 0; i < t.length; i++) {
+    numBloques[i] = t[i].length;
+  }
+  //***** BOMBILLA *****
+  anchoBulb = 50;
+  altoBulb = 59;
+  //***** SELECCIÓN DE COLOR *****
+  // En p5.js, se usa directamente el array de números
+  BASIC_COLOR = [
+    color(255, 128, 128), color(255, 255, 128), color(128, 255, 128), color(0, 255, 128),
+    color(128, 255, 255), color(0, 128, 255), color(255, 128, 192), color(255, 128, 255),
+    color(255, 0, 0), color(255, 255, 0), color(128, 255, 0), color(0, 255, 64),
+    color(0, 255, 255), color(0, 128, 192), color(128, 128, 192), color(255, 0, 255), 
+    color(128, 64, 64), color(255, 128, 64), color(0, 255, 0), color(0, 128, 128),
+    color(0, 64, 128), color(128, 128, 255), color(128, 0, 64), color(255, 0, 128), 
+    color(128, 0, 0), color(255, 128, 0), color(0, 128, 0), color(0, 128, 64),
+    color(0, 0, 255), color(0, 0, 160), color(128, 0, 128), color(128, 0, 255), 
+    color(64, 0, 0), color(128, 64, 0), color(0, 64, 0), color(0, 64, 64),
+    color(0, 0, 128), color(0, 0, 64), color(64, 0, 64), color(64, 0, 128),
+    color(0, 0, 0), color(128, 128, 0), color(128, 128, 64), color(128, 128, 128),
+    color(64, 128, 128), color(192, 192, 192), color(64, 0, 64), color(255, 255, 255)
+  ];
+  BASIC_COLORSeleccionado = 48;
+  customColorSeleccionado = 16;
+  hue = 120;
+  saturation = 120;
+  brightness = 120;
+  rgbInputs = ["255", "0", "0"];
+  hsbInputs = ["120", "120", "120"];
+  //***** SELECCIÓN DE TAPETE *****
+  indiceTapeteSeleccionado = -1; 
+  //***** CUADROS DE EDICIÓN DE TEXTO/DATOS *****
+  textoTemporal = ""; // Variable temporal que almacena lo que se está escribiendo in situ
+  let cantidadGPIOS = 9;
+  conectorGPIO = new Array(cantidadGPIOS); // Instancias de los conectores GPIO
+  gpio = new Array(cantidadGPIOS); // Instancias de los GPIOs (contienen las letras)
+  elemento = new Array(cantidadGPIOS); // Instancias de los elementos (sensores/actuadores)
+  letraGPIO = new Array(4); // Instancias letras que serán asignadas a las instancias GPIO
+  letrasGPIOs = ['A', 'B', 'C', 'D']; // Letras para los GPIOs
+  nomenclaturaElementos = ["SONIC", "LIGHT1", "LINE1", "BUZZ", "SW1", "LDRs", "SW2", "LIGHT2", "LINE2"];
+  // Crea los 2 conectores de los jumpers
+  for (let i = 0; i < 4; i++) { // 4 parejas de conectores (jumpers)
+    for (let j = 0; j < 2; j++) { // 2 conectores por cable
+      conector.push(new Conector());
+    }
+  }
+  // Crea los 2 conectores de los cables
+  for (let i = 0; i < 4; i++) { // 4 parejas de conectores (cables)
+    for (let j = 0; j < 2; j++) { // 2 conectores por cable
+      conector.push(new Conector());
+    }
+  }
+  // Crea los 4 jumpers
+  for (let i = 0; i < 4; i++) {
+    jumpers.push(new Jumper(0, 0, conector[i * 2], conector[i * 2 + 1], false, color(255, 255, 0)));
+  }
+  // Crea los 4 cables
+  let colorCable = [color(255, 0, 0), color(255, 0, 255), color(0, 0, 255), color(0, 255, 255)];
+  for (let i = 0; i < 4; i++) {
+    jumpers.push(new Jumper(0, 0, conector[(i + 4) * 2], conector[(i + 4) * 2 + 1], true, colorCable[i]));
+  }
+  // Asocia conectores con Jumpers
+  for (let i = 0; i < 8; i++) {
+    conector[i * 2].jumperAsociado = jumpers[i];
+    conector[i * 2 + 1].jumperAsociado = jumpers[i];
+  }
+    // Crea las 4 LetrasGPIOs
+  for (let i = 0; i < letraGPIO.length; i++) {
+    letraGPIO[i] = new Letra(letrasGPIOs[i]);
+  }
+  // Crea todo lo relacionado con los GPIOs
+  let leftX = -165, leftY = -158;
+  let rightX = 165, rightY = -140;
+  inc = 11 * escalaBase; // distancia desde el centro del conector GPIO
+  // Los 5 GPIOs de la izquierda
+  for (let i = 0; i < 5; i++) {
+    elemento[i] = new Elemento(leftX - inc, leftY + i * 18, nomenclaturaElementos[i]);
+    let letraProvisional;
+    if (i < 3) {
+      letraProvisional = letraGPIO[0];
+    } else {
+      letraProvisional = letraGPIO[1];
+    }
+    gpio[i] = new GPIO(leftX + inc, leftY + i * 18, letraProvisional);
+    conectorGPIO[i] = new ConectorGPIO(leftX, leftY + i * 18);
+  }
+  // Los 4 GPIOs de la derecha
+  for (let i = 0; i < 4; i++) {
+    elemento[i + 5] = new Elemento(rightX + inc, rightY + i * 18, nomenclaturaElementos[i + 5]);
+    let letraProvisional;
+    if (i < 2) {
+      letraProvisional = letraGPIO[3];
+    } else {
+      letraProvisional = letraGPIO[2];
+    }
+    gpio[i + 5] = new GPIO(rightX - inc, rightY + i * 18, letraProvisional);
+    conectorGPIO[i + 5] = new ConectorGPIO(rightX, rightY + i * 18);
+  }
+  // Asigna los GPIOs a las letras
+  for (let i = 0; i < letraGPIO.length; i++) {
+    if (i == 0) {
+      for (let j = 0; j < 3; j++) {
+        letraGPIO[i].gpioLetra.push(gpio[j]); // .add() en Processing -> .push() en p5.js
+      }
+    } else if (i == 1) {
+      for (let j = 0; j < 2; j++) {
+        letraGPIO[i].gpioLetra.push(gpio[j + 3]);
+      }
+    } else if (i == 2) {
+      for (let j = 0; j < 2; j++) {
+        letraGPIO[i].gpioLetra.push(gpio[j + 5]);
+      }
+    } else if (i == 3) {
+      for (let j = 0; j < 2; j++) {
+        letraGPIO[i].gpioLetra.push(gpio[j + 7]);
+      }
+    }
+  }
+  // Reseta conectores, jumpers y obstáculos
+  eliminarConfiguracion();
+  // ***** BOTONES DEL MENÚ *****
+  for (let i = 0; i < numBotones; i++) {
+    yBoton[i] = ALTO_MENU_SUPERIOR  / 2;
+  }
+  // Establece las coordenadas X de los botones para seleccionar el modo
+  for (let i = 3; i < numBotones - 2; i++) {
+    if (i == 3) {
+      xBoton[3] = 20 + boton[0].width / 2;
+    } else {
+      xBoton[i] = xBoton[i - 1] + boton[i - 1].width / 2 + boton[i].width / 2 + 10;
+    }
+  }
+  // Establece las coordenadas X de los botones de ejecución
+  for (let i = 0; i < 3; i++) {
+    if (i == 0) {
+      xBoton[0] = xBoton[numBotones - 3] + 75;
+    } else {
+      xBoton[i] = xBoton[i - 1] + boton[i - 1].width / 2 + boton[i].width / 2 + 10;
+    }
+  }
+  // Establece las coordenadas X de los botones para el ZOOM
+  xBoton[6] = boton[6].width;
+  xBoton[7] = xBoton[6]+boton[6].width*1.25;
+  // ***** BOTONES DE LAS CATEGORÍAS *****
+  let xMenu = 10; // Posición X inicial del primer botón 
+  let yMenu = ALTO_MENU_SUPERIOR / 2; // Posición Y inicial del primer botón (centro del menú superior)
+  let anchoMinimoMenu = 0;
+  codigoCategoria = []; // Asegúrate de inicializar como array vacío si no está hecho
+  for (let i = 0; i < BOTON_MENU.length; i++) {
+    if (i % 3 == 0) {
+      xMenu = 10;
+      yMenu += 30;
+    } else {
+      if (codigoCategoria.length > 0) {
+        let ultimo = codigoCategoria[codigoCategoria.length - 1];
+        xMenu = xMenu + ultimo.ancho + 5;
+      } else {
+        xMenu = 10 + 5;
+      }
+    }
+    let nuevoBloque = new Bloque(xMenu, yMenu, i, 300, BOTON_MENU[i], true, false);
+    codigoCategoria.push(nuevoBloque);
+    let actual = codigoCategoria[codigoCategoria.length - 1];
+    if (actual.x + actual.ancho + 10 > anchoMinimoMenu) {
+      anchoMinimoMenu = actual.x + actual.ancho + 10;
+    }
+  }
+ //***** BLOQUES DEL MENÚ LATERAL IZQUIERDO *****
+  for (let i = 0; i < codigoCategoria.length; i++) {
+    let separacion;
+    let anchoBloque = 0;
+    let categoria = t[i];
+    for (let j = 0; j < categoria.length; j++) {
+      codigoMenu.push(new Bloque(10, 0, i, j, categoria[j], false, false));
+      if (codigoMenu[codigoMenu.length - 1].nombre == "ElseBlock") {
+        separacion = 0;
+        if (codigoMenu.length >= 2) {
+          codigoMenu[codigoMenu.length - 1].anterior = codigoMenu[codigoMenu.length - 2];
+          codigoMenu[codigoMenu.length - 2].siguiente = codigoMenu[codigoMenu.length - 1];
+        }
+      } else {
+        separacion = SEPARACION_BLOQUES_MENU;
+      }
+      if (j > 0 && codigoMenu.length >= 2 && codigoMenu[codigoMenu.length - 2].nombre == "WhenRunBlock") {
+        separacion += 15;
+      }
+      if (j == 0) {
+        codigoMenu[codigoMenu.length - 1].y = codigoCategoria[codigoCategoria.length - 1].y + codigoCategoria[codigoCategoria.length - 1].grosorTotal * 1.75;
+      } else {
+        codigoMenu[codigoMenu.length - 1].y = codigoMenu[codigoMenu.length - 2].y + codigoMenu[codigoMenu.length - 2].grosorTotal + separacion;
+      }
+      if (codigoMenu[codigoMenu.length - 1].ancho > anchoBloque) {
+        anchoBloque = codigoMenu[codigoMenu.length - 1].ancho;
+      }
+      if (anchoBloque > anchoMinimoMenu) {
+        anchoMenu[i] = anchoBloque + BORDE_MENU * 2;
+      } else {
+        anchoMenu[i] = anchoMinimoMenu;
+      }
+    }
+    altoMenu[i] = codigoMenu[codigoMenu.length - 1].y + codigoMenu[codigoMenu.length - 1].grosorTotal + 10;
+  }
+  for (let i = 0; i < codigoCategoria.length; i++) {
+    altoMenu[i] = altoMenu[i] * escalaBase;
+    anchoMenu[i] = anchoMenu[i] * escalaBase;
+  }
+  for (let variable of codigoMenu) {
+    variable.calcularVerticesBloque();
+  }
+  //***** Crea las VARIABLES desde la t a la z
+  for (let i = 0; i < 7; i++) crearVariable(String.fromCharCode(116 + i));
+  //***** BUFFER para la onda de ULTRASONIDOS *****
+  bufferEfectos = createGraphics(windowWidth, windowHeight / 2);
+  //***********/
+  botonReiniciar();
+  document.body.classList.remove('loading');
+  appLista=true;
+  // Al final de setup(), después de todo:
+  setTimeout(() => {
+    console.log('🔧 Forzando redibujado completo...');
+    loop(); // Activar temporalmente
+    setTimeout(() => {
+      // Forzar varios frames
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          redraw();
+        }, i * 50);
+      }
+      // Volver a noLoop
+      setTimeout(() => {
+        noLoop();
+        console.log('✅ Redibujado completado');
+      }, 300);
+    }, 100);
+  }, 500);
+}
+
+//*******************************DRAW***********************************************/
+function draw() { 
+  if (bloquesStart.length>0 && bloqueStartSeleccionado==null && bloqueStartSeleccionado==undefined) {
+    bloqueStartSeleccionado=bloquesStart[0];
+  }
+  //Para móviles
+  let nuevaOrientacion = (width > height) ? "horizontal" : "vertical";
+  if (nuevaOrientacion !== orientacionActual) {
+    orientacionActual = nuevaOrientacion;
+    windowResized() ;
+  }
+  if (windowWidth!=windowWidthActual || windowHeight!=windowHeightActual) {
+    windowResized();
+  }
+  //***** BUCLE PRINCIPAL PARA EJECUCIÓN DE BLOQUES *****
+  // Sólo se ejecuta en los modos CONFIGURACIÓN Y SIMULACIÓN
+  if (ejecutando && (modo == 3 || modo == 5)) {
+    isBeeping=comprobarBuzzer();
+    if (modo == 5) Crono+= 1 / 60;
+    if (miliSegundos>0) miliSegundos-= 1000 / 60;
+    if (miliSegundos<=0) {
+      if (bloqueEjecutando == null || bloqueEjecutando == undefined ) {
+        if (robotFisico.potMotor[0] == 0 && robotFisico.potMotor[1] == 0) {
+          botonStop();
+        }
+      } else {
+        bloqueEjecutando.ejecutar();
+      }
+    }
+  } //***** MODO SIMULACIÓN *****
+  if (modo == 5) {
+    if (ejecutando) {//Si se ha pulsado el botón play
+      Engine.update(engine);//Actualiza la física
+      robotFisico.update();//Actualiza el movimiento del robot;
+    }
+    for (let elem of elemento) elem.actualizarValor(); 
+    background(255);
+    fill(255);
+    imageMode(CENTER);
+    rectMode(CENTER);
+    push();
+    translate( windowWidth/2, windowHeight/2);
+    scale(zoomSimulacion * escalaBase);
+    translate(panSimulacionX, panSimulacionY);
+    let translate1 = createVector(0, 0);
+    let translate2 = createVector(0, 0);
+    //Si estamos desplazando el robot con el mouse
+    if (desplazandoRobot) {
+      transformedX = (mouseX - windowWidth / 2) / (zoomSimulacion * escalaBase) - panSimulacionX;
+      transformedY = (mouseY - windowHeight / 2) / (zoomSimulacion * escalaBase) - panSimulacionY;
+      translate1.x=-CrumblebotAnteriorX;
+      translate1.y=-CrumblebotAnteriorY;
+      translate2.x= transformedX + offsetX;
+      translate2.y= transformedY + offsetY;
+    } // Si el robot está moviéndose o parado
+    else {
+      translate1.x=- robotFisico.body.position.x;
+      translate1.y=- robotFisico.body.position.y;
+      translate2.x= robotFisico.body.position.x;
+      translate2.y= robotFisico.body.position.y;
+    }
+    //Dibujo del FONDO
+    translate(translate1);
+    if (fondo != null && fondo != undefined) image(fondo, 0, 0);
+    // Dibujo de los obstáculos, barreras y laterales
+    if (lateralesVisibles) {
+      for (let o of laterales) o.dibujar();
+    }
+    for (let o of obstaculo) o.dibujar();
+    if (obstaculoDesplazando != null) obstaculoDesplazando.dibujar(); 
+    //Dibujo del ROBOT
+    translate(translate2);
+    robotFisico.dibujar();
+    // Dibujo de los efectos del ULTRASONIDO
+    if (robot.ultrasonidosConectado && ejecutando) {
+      push();
+      imageMode(CORNER);
+      rotate(anguloOnda - robotFisico.body.angle);
+      image(
+        bufferEfectos,
+        0,
+        -bufferEfectos.height / 2 / zoomSimulacion,
+        bufferEfectos.width / zoomSimulacion,
+        bufferEfectos.height / zoomSimulacion
+      );
+      bufferEfectos.push();
+      bufferEfectos.translate(0, bufferEfectos.height / 2);
+      bufferEfectos.scale(zoomSimulacion);
+      bufferEfectos.strokeWeight(3);
+      bufferEfectos.noFill();
+      const lectura = letraGPIO[0].valorLetra;
+      const maxLectura = 400;
+      const FOV = radians(7.5);
+      const colorOnda = (lectura >= maxLectura) ? bufferEfectos.color(255, 0, 0) : bufferEfectos.color(0, 255, 0);
+      const capas = 5;
+      const pasoRadio = 45;
+      // ⚡ avance real
+      radio += pasoRadio;
+      // ⏱️ avanzar ruido suavemente
+      ruidoTiempo += ruidoVelocidad;
+      for (let i = 0; i < capas; i++) {
+        // 🌫️ ruido ultrasónico suave
+        const ruido = noise(ruidoTiempo + i * 0.35);
+        const jitter = map(ruido, 0, 1, -ruidoIntensidad, ruidoIntensidad);
+        const r = radio - i * pasoRadio + jitter;
+        if (r <= 0) continue;
+        // 🔥 dfuminado de onda
+        const t = constrain(r / 2000, 0, 1);
+        const alphaDist = 255 * pow(1 - t, 2.8);
+        const alphaEco  = map(i, 0, capas - 1, 255, 60);
+        const alphaFinal = min(alphaDist, alphaEco);
+        bufferEfectos.stroke(red(colorOnda),green(colorOnda),blue(colorOnda),alphaFinal);
+        bufferEfectos.arc(robotFisico.frontal,0,r*2,r*2,-FOV,FOV);
+      }
+      if (radio / 10 > maxLectura || radio / 10 > lectura) {
+        radio = 0;
+        anguloOnda = robotFisico.body.angle;
+        bufferEfectos.clear();
+      }
+      bufferEfectos.pop();
+      pop();
+    }
+    pop();
+    fill(0);
+    //Dibujo de la BOMBILLA
+    push();
+    if (!desplazandoBulb) {
+      scale(escalaBase);
+      image(bulb, (windowWidth/2)/escalaBase, windowHeight/escalaBase - bulb.height*1.5);
+    } else {
+      translate(mouseX, mouseY);
+      scale(escalaBase);
+      noStroke();
+      for (let i = 0; i < 20; i++) {
+        fill(255, 255, 0, 12);
+        ellipse(0, 0, i*50, i*50);
+      }
+    }
+    pop();
+    //Dibujo de la información y otros elementos del ESCENARIO
+    stroke(100);
+    strokeWeight(1);
+    noFill();
+    rectMode(CENTER);
+    rect(windowWidth - 205, windowHeight / 2 - 40, 15, 15);
+    rect(windowWidth - 125, windowHeight / 2 - 40, 15, 15);
+    fill(100);
+    ellipse(windowWidth - 205, windowHeight / 2 - 40, 10, 10);
+    ellipse(windowWidth - 125, windowHeight / 2 - 40, 10, 10);
+    text("SW1", windowWidth - 190, windowHeight / 2 - 40);
+    text("SW2", windowWidth - 110, windowHeight / 2 - 40);  
+    textAlign(RIGHT, CENTER);
+    fill(100);
+    ellipse(windowWidth - 210, windowHeight / 2, 5, 5);
+    noFill();
+    for (let radio = 10; radio < 30; radio += 5) {
+      arc(windowWidth - 210, windowHeight / 2, radio, radio, radians(-45), radians(45));
+    }
+    fill(100);
+    if (robot.ultrasonidosConectado && ejecutando) {
+      text(elemento[0].valorElemento, windowWidth - 160, windowHeight / 2);
+    } else {
+      text(0, windowWidth - 160, windowHeight / 2); 
+    }
+    for (let i = 0; i < 2; i++) {
+      push();
+      translate(windowWidth - 205 + i * 80, windowHeight / 2 + 30);
+      ellipse(0, 0, 10, 10);
+      text(int(elemento[1 + i * 6].valorElemento), 45, 0);
+      for (let ang = 0; ang < TWO_PI; ang += PI / 4) {
+        rotate(ang);
+        line(7, 0, 10, 0);
+      }
+      pop();
+    } 
+    for (let i = 0; i < 2; i++) {
+      fill(100);
+      text(int(elemento[2 + i * 6].valorElemento), windowWidth - 160 + i * 80, windowHeight / 2 + 60);
+      rect(windowWidth - 210 + i * 80, windowHeight / 2 + 60, 10, 10);
+      fill(255);
+      rect(windowWidth - 200 + i * 80, windowHeight / 2 + 60, 10, 10);
+    } 
+    fill(100);
+    textAlign(LEFT, CENTER);
+    for (let i = 0; i < letraGPIO.length; i++) {
+      letraGPIO[i].actualizarValor();
+      text(String.fromCharCode(65 + i) + ": " + letraGPIO[i].valorLetra, windowWidth - 210, windowHeight / 2 + 90 + 30 * i);
+    }  
+    let y = windowHeight / 2 - (codigoVariables.length / 2) * 20;
+    for (let variable of codigoVariables) {
+      y = y + 20;
+      text(variable.texto[0] + ": " + variable.valorNumerico, 65, y);
+    }  
+    //Dibujo de los botones para AÑDIR OBSTÁCULOS Y BARRERAS
+    push();
+    translate(windowWidth / 2, 0);
+    scale(escalaBase);
+    fill(100, 100, 200);
+    rect(-90, 90, 160, 30);
+    fill(200, 100, 100);
+    rect(90, 90, 160, 30);
+    fill(255);
+    textAlign(CENTER, CENTER);
+    text("AÑADIR OBSTÁCULO", -90, 90);
+    text("AÑADIR BARRERA", 90, 90);
+    pop();
+  } //***** MODO EDICIÓN DE BLOQUES *****
+  else if (modo == 4) {
+    dibujarBloques();
+    if (colorPickerOpen && bloqueEditando) {
+      push();
+        translate(windowWidth/2, windowHeight/2);
+        scale(escalaBase);
+        translate(-ANCHO_MARCO/2, -ALTO_MARCO/2);
+        textSize(12);
+        fill(200);
+        strokeWeight(1);
+        stroke(128);
+        textAlign(LEFT, CENTER);
+        if (customColorActivo) rect(0, 0, ANCHO_MARCO, ALTO_MARCO);
+        else rect(0, 0, PICKER_X, ALTO_MARCO);
+        drawColours();//Abre la función que dibuja todo lo referente al selector de color
+        if (customColorActivo) drawColorPicker();
+      pop();
+      textSize(14);
+    } // Si hay un DESPLEGABLE en el bloque para clonar o borrar...
+    else if (desplegableBloque) {
+      push();
+      fill(200);
+      rect(xDesplegable, yDesplegable, 200 * escalaBase, 50 * escalaBase);
+      fill(0);
+      textAlign(LEFT, TOP);
+      textSize(int(14 * escalaBase));
+      text("Duplicate blocks", xDesplegable + 10 * escalaBase, yDesplegable + 10 * escalaBase);
+      text("Delete block", xDesplegable + 10 * escalaBase, yDesplegable + 30 * escalaBase);
+      textSize(14);
+      pop();
+    }
+  } //***** MODO CONFIGURACIÓN DEL ROBOT *****
+  else if (modo == 3) {
+    background(254);
+    imageMode(CENTER);
+    rectMode(CENTER);
+    push();
+    translate(windowWidth/2, windowHeight/2);
+    scale(zoomConfiguracion * escalaBase);
+    translate(panConfiguracionX, panConfiguracionY);
+    robot.dibujar();
+    for (let jumper of jumpers) jumper.dibujar();
+    for (let i = 0; i < conector.length; i += 2) conector[i].jumperAsociado.dibujar();
+    if (!robot.ultrasonidosConectado) image(ultrasonic, ULTRASONIC_X, ULTRASONIC_Y);
+    else image(ultrasonidos, ULTRASONIDOS_X, ULTRASONIDOS_Y);
+    noFill();
+    strokeWeight(1);
+    stroke(128);
+    if (ejecutando && isBeeping) {
+      for (let i = 10; i < 100; i += 10) {
+        let radio = i + random(-5, 5);
+        ellipse(-170, 45, radio, radio);
+      }
+    }
+    pop();
+  } //*************** MODO SELECCIÓN DE TAPETE *************************************/
+  else if (modo == 6) { 
+    // Si no hay xPos, calcularlos
+    if (!xPos || xPos.length !== thumbnails.length) {
+      calcularThumbnails();
+    }
+    push();
+    imageMode(CORNER);
+    background(240);
+    noFill();
+    scale(escalaBase);
+    stroke(2);
+    rectMode(CORNER);
+    // DIBUJAR THUMBNAILS
+    for (let i = 0; i < thumbnails.length; i++) {
+      // Si el thumbnail existe, dibujarlo
+      if (thumbnails[i]) {
+        image(thumbnails[i], xPos[i], yPos[i] - offsetYBarra);
+      }
+      // Dibujar borde
+      if (indiceTapeteSeleccionado != i) {
+        stroke(128);
+        strokeWeight(1);
+      } else {
+        stroke(255, 0, 0);
+        strokeWeight(3);
+      }
+      rect(xPos[i], yPos[i] - offsetYBarra, anchoThumbnail, altoThumbnail);
+    }
+    // DIBUJAR BARRA DE SCROLL
+    if (totalThumbnailsHeight > windowHeight - 100) {
+      // Calcular tamaño y posición del scrollbar
+      let visibleRatio = (windowHeight - 100) / totalThumbnailsHeight;
+      let scrollBarHeight = (windowHeight - 100) * visibleRatio;
+      // Calcular posición (igual que en Processing)
+      let scrollBarY = 60 + ((windowHeight - 100 - scrollBarHeight) * 
+                    (offsetYBarra / (totalThumbnailsHeight - (windowHeight - 100))));
+      // Dibujar barra de scroll
+      fill(200); 
+      rect(windowWidth - 40, 60, 20, windowHeight - 100);
+      fill(150); 
+      rect(windowWidth - 40, scrollBarY, 20, scrollBarHeight);
+    }  
+    pop();
+  }
+  dibujarNoBloques();  
+}
+
+function calcularThumbnails() { 
+  let thumbnailsPorFila = 4;
+  let espacioEntreThumbs = 20;
+  anchoThumbnail = 150;
+  altoThumbnail = 150;
+  // Inicializar arrays
+  xPos = new Array(thumbnails.length);
+  yPos = new Array(thumbnails.length);  
+  // CALCULAR POSICIONES EN GRID
+  for (let i = 0; i < thumbnails.length; i++) {
+    // Columna y fila en el grid
+    let columna = i % thumbnailsPorFila;
+    let fila = Math.floor(i / thumbnailsPorFila);   
+    // Calcular posición
+    xPos[i] = espacioEntreThumbs + columna * (anchoThumbnail + espacioEntreThumbs);
+    // Desplazar Y por el menú superior
+    yPos[i] = espacioEntreThumbs + fila * (altoThumbnail + espacioEntreThumbs) + ALTO_MENU_SUPERIOR * escalaBase;
+  }   
+  // Calcular altura total para scroll
+  totalThumbnailsHeight = espacioEntreThumbs + 
+                          Math.ceil(thumbnails.length / thumbnailsPorFila) * 
+                          (altoThumbnail + espacioEntreThumbs) +
+                          ALTO_MENU_SUPERIOR * escalaBase;
+}
+
+
+function dibujarBloques() {
+  background(254);
+  if (anchoMenu[menu] > anchoMenu[0]) {
+    anchoRect = anchoMenu[menu] + 10;
+  } else {
+    anchoRect = anchoMenu[0] + 10;
+  }
+  rectMode(CORNER);
+  imageMode(CORNER);
+  bloquesNoSeleccionados = codigo.filter(item => !bloquesSeleccionados.includes(item));
+  for (let bloque of bloquesNoSeleccionados) {
+    if (bloque.tipo=='_') bloque.dibujoSub();
+    else bloque.dibujoSub();
+  }
+  fill(205);
+  noStroke();
+  rect(0, 0, anchoRect * escalaBase, (altoMenu[menu] + 5) * escalaBase);
+  push();
+  translate(0, panMenuBloquesY);
+  for (let bloque of codigoMenu) if (bloque.categoria==menu) bloque.dibujar();
+  // Sólo muestra los bloques de las variables si el menú es el de las variables
+  for (let bloque of codigoVariables) if (bloque.categoria == 3 && bloque.categoria == menu) bloque.dibujar();
+  for (let bloque of botonesVariables) if (bloque.categoria == 3 && bloque.categoria == menu) bloque.dibujar();
+  pop();
+  rect(0, 0, anchoRect * escalaBase, ALTO_COMIENZO_BLOQUES * escalaBase);
+  for (let bloque of codigoCategoria) bloque.dibujar();
+  for (let bloque of bloquesSeleccionados) {
+    if (bloque.tipo=='_') bloque.dibujoSub();
+  }
+  if (bloqueSeleccionado != null) {
+    bloqueSeleccionado.dibujoSub();//Para que el bloque seleccionado se vea siempre arriba
+    if (bloqueSeleccionado.siguiente!=null) {
+      if (bloqueSeleccionado.siguiente.nombre=="ElseBlock") {
+        bloqueSeleccionado.siguiente.dibujar();
+      }
+    }
+  }
+  dibujoFlecha();
+}
+
+function dibujarNoBloques() {
+  imageMode(CORNER);
+  push();
+  scale(escalaBase);
+  image(bufferMenuSuperior,0,0);
+  rectMode(CORNER);
+  if (modo == 3 || modo == 5) {
+    fill(255);
+    stroke(128);
+    rect(10, 70, 100, 40);
+    rect(10, 115, 100, 40);
+    fill(128);
+    textAlign(CENTER);
+    text("Cronómetro", 55, 85);
+    text(nf(Crono, 0, 1) + " seg", 55, 100);
+    text("Distancia", 55, 130);
+    text(nf(Distancia / 10, 0, 1) + " cm", 55, 145);
+  }
+  pop();
+  if (movidoDuranteEjecucion) {
+    fill(255, 0, 0);
+    ellipse(windowWidth - 50*escalaBase, windowHeight - 75*escalaBase, 25, 25);
+  }
+}
+
+function crearMenuSuperior() {
+  bufferMenuSuperior.push();
+    bufferMenuSuperior.imageMode(CENTER);
+    //Dibuja el MENÚ en el que se encuentran los BOTONES del MODO y del ZOOM
+    bufferMenuSuperior.fill(205);
+    bufferMenuSuperior.noStroke();
+    bufferMenuSuperior.rectMode(CORNER);
+    bufferMenuSuperior.rect(0, 0, windowWidth, ALTO_MENU_SUPERIOR);
+    //Dibujo de los botones de ejecución
+    for (let i = 0; i < 3; i++) {
+      bufferMenuSuperior.noTint();
+      if ( modo==4 || ( (modo==3 || modo==5) && ( ((ejecutando || bloqueEjecutando==null) && i==0) || (!ejecutando && i==1) ))) bufferMenuSuperior.tint(255, 100);
+      bufferMenuSuperior.image(boton[i], xBoton[i], yBoton[i]);
+    }
+    //Dibujo de los botones del modo
+    for (let i = 3; i < numBotones - 2; i++) {
+      bufferMenuSuperior.noTint();
+      if (i == modo) bufferMenuSuperior.tint(255, 100);
+      bufferMenuSuperior.image(boton[i], xBoton[i], yBoton[i]);
+    }
+    bufferMenuSuperior.image(boton[6],windowWidth/escalaBase-xBoton[6], yBoton[6]);
+    bufferMenuSuperior.image(boton[7],windowWidth/escalaBase-xBoton[7], yBoton[7]);
+  bufferMenuSuperior.pop();
+}
+
+function dibujoFlecha() {
+  if (bloqueSeleccionado==null) return;
+  fill(128, 128, 128, 200);
+  let hayFlecha = false;
+  if (seleccion4 != null) {
+    hayFlecha = true;
+    xFlecha = seleccion4.x;
+    yFlecha = seleccion4.y;
+  } else if (seleccion3 != null) {
+    hayFlecha = true;
+    xFlecha = seleccion3.x;
+    yFlecha = seleccion3.y + seleccion3.grosorTotal;
+  } else if (seleccion2 != null) {
+    hayFlecha = true;
+    xFlecha = seleccion2.x + seleccion2.xDato[seleccionSubBloque];
+    yFlecha = seleccion2.y + seleccion2.grosorBloque / 2;
+  } else if (seleccion != null) {
+    hayFlecha = true;
+    if (seleccion.bucle || seleccion.nombre=="WhenRunBlock") {
+      xFlecha = seleccion.x+seleccion.anchoLadoIzqBucle;
+    } else {
+      xFlecha = seleccion.x;
+    }
+    yFlecha = seleccion.y + seleccion.grosorBloque;
+  }
+  if (hayFlecha) {
+    push();
+    translate(windowWidth / 2, windowHeight / 2);
+    scale(zoomCodigo * escalaBase);
+    translate(panCodigoX, panCodigoY);
+    beginShape();
+    vertex(xFlecha, yFlecha);
+    vertex(xFlecha - 10, yFlecha - 10);
+    vertex(xFlecha - 10, yFlecha - 5);
+    vertex(xFlecha - 30, yFlecha - 3);
+    vertex(xFlecha - 30, yFlecha + 3);
+    vertex(xFlecha - 10, yFlecha + 5);
+    vertex(xFlecha - 10, yFlecha + 10);
+    vertex(xFlecha, yFlecha);
+    endShape();
+    pop();
+  }
+}
+
+// Es una de las funciones más complejas
+function conectar(origen, destino, esArriba) {
+  if (origen != destino) { // Comprobación de seguridad. Evitamos conectar a sí mismo
+    let bloquePadre = null; // Variable para guardar el bloque padre del destino
+    let inferiorOrigen = bloquesSeleccionados[bloquesSeleccionados.length - 1]; // Este es el último bloque de lo arrastrado
+    // Siempre que exista un bloque siguiente en el destino...Si el destino es la parte inferior de un bucle O el destino es un bloque normal
+    if (destino.siguiente != null && ((destino.bucle && !esArriba) || !destino.bucle)) {
+      destino.siguiente.anterior = inferiorOrigen;
+      inferiorOrigen.siguiente = destino.siguiente;
+    }
+    if (destino.bucle && esArriba) { // Si el destino es la parte superior de un bucle...
+      bloquePadre = destino; // El bloque padre para los bloques inferiores al origen será el propio bloque destino
+      if (destino.bucleSiguiente != null) {
+        destino.bucleSiguiente.anterior = inferiorOrigen; // El bloque anterior del que antes era bucleSiguiente, será el último bloque del conjunto desplazado
+        inferiorOrigen.siguiente = destino.bucleSiguiente;
+      }
+      destino.bucleSiguiente = origen; // El parámetro bucleSiguiente de la parte superior del bucle será el bloque origen
+    } else { // Si no es la parte superior de un bucle
+      bloquePadre = destino.padre; // El bloque padre para los bloques inferiores al origen será el mismo padre que tiene el bloque destino
+    }
+    // Si el destino es un bloque normal o el destino es la parte inferior de un bucle
+    if (!destino.bucle || (destino.bucle && !esArriba)) {
+      origen.anterior = destino; // El bloque superior del arrastrado pasa a ser el bloque destino.
+      destino.siguiente = origen; // ahora ya podemos asignar como bloque siguiente del destino el propio bloque que arrastramos.
+    }
+    // Volvemos a recorrer los bloques inferiores a origen para actualizar sus bloques padres
+    let bloque = origen; // Guardamos la referencia del bloque que queremos conectar en una variable.
+    origen.padre = bloquePadre;
+    while (bloque.siguiente != null) {
+      bloque.siguiente.padre = bloquePadre;
+      bloque = bloque.siguiente;
+    }
+    origen.calculoGrosorBucle();
+    destino.calculoGrosorBucle();
+    destino.actualizarCoordenadas();
+    origen.calcularVerticesBloque();
+    destino.calcularVerticesBloque()
+  } 
+  //bloqueSeleccionado = null; // Ya hemos conectado luego deja de haber bloque Seleccionado
+}
+
+// Esta función desconecta unos bloques de otros al pinchar sobre ellos y arrastrarlos
+function desconectar(origen) {
+  if (origen.tipo == '_') {
+    if (origen.anterior != null) {
+      origen.anterior.siguiente = null; // Si tenía un bloque anterior, Ese bloque anterior se desvincula.
+      origen.anterior = null; // El bloque también pierde la referencia al bloque anterior.
+    } else if (origen.padre != null) {
+      origen.padre.bucleSiguiente = null;
+    }
+    let bloquePadre = origen.padre; // Si el bloque está en un bucle, guardamos la referencia al bloque padre/bucle.
+    origen.padre = null;
+    let bloque = origen;
+    while (bloque.siguiente != null) { // Vamos a recorrer todos los bloques que hay debajo. Mientras que existan bloques...
+      bloque = bloque.siguiente; // Seleccionamos el bloque que hay justamente debajo
+      bloque.padre = null; // Ahora ya podemos eliminar la referencia al bloque padre/bucle.
+    }
+    if (bloquePadre != null) {
+      bloquePadre.calculoGrosorBucle();
+      bloquePadre.actualizarCoordenadas();
+      bloquePadre.calcularVerticesBloque()
+      if (bloquePadre.nombre=="ElseBlock") bloquePadre.anterior.calcularVerticesBloque();
+    }
+  }
+}
+
+// Calcula si un número en formato texto tiene el formato de número real
+function esNumeroReal(str) {
+  try {
+    parseFloat(str);
+    return !isNaN(parseFloat(str)) && isFinite(str);
+  } catch (e) {
+    return false;
+  }
+}
+
+function crearVariable(nombreVariable) {
+   let yVariable; 
+  // Calcular posición Y
+  if (codigoVariables.length === 0) {
+    yVariable = botonCrearVariable.y + botonCrearVariable.grosorBloque + SEPARACION_BLOQUES_MENU;
+  } else {
+    let ultimaVariable = codigoVariables[codigoVariables.length - 1];
+    yVariable = ultimaVariable.y + ultimaVariable.grosorBloque + SEPARACION_BLOQUES_MENU;
+  }  
+  // Crea el bloque de la variable
+  let nuevaVariable = new Bloque(10, yVariable, 3, 4, BOTON_VARIABLE, false, false);
+  nuevaVariable.texto[0] = nombreVariable;
+  nuevaVariable.AxTexto[0] = nuevaVariable.calculoAnchoDato(nuevaVariable.texto[0]);
+  nuevaVariable.calculoDimensiones();
+  nuevaVariable.dato[0] = "0";
+  codigoVariables.push(nuevaVariable);
+  // Actualizar altura del menú
+  if (codigoMenu.length > 0) {
+    let ultimoMenu = codigoMenu[codigoMenu.length - 1];
+    altoMenu[3] = yVariable + ultimoMenu.grosorTotal + 10;
+  }
+  // Crea el bloque DEL asociado a la variable
+  let xDel = nuevaVariable.x + nuevaVariable.ancho + 10;
+  let botonDel = new Bloque(xDel, yVariable, 3, 100, BOTON_DEL, true, false);
+  botonesVariables.push(botonDel);
+  // Configurar relaciones
+  nuevaVariable.siguiente = botonDel;  // Para poder borrar posteriormente
+  botonDel.padre = nuevaVariable;
+  // Crea el bloque RENAME asociado a la variable
+  let xRename = botonDel.x + botonDel.ancho + 10;
+  let botonRename = new Bloque(xRename, yVariable, 3, 200, BOTON_RENAME, true, false);
+  botonesVariables.push(botonRename);
+  // Configurar relaciones
+  botonDel.siguiente = botonRename;  // Para poder borrar posteriormente
+  botonRename.padre = nuevaVariable;  // Para poder borrar posteriormente la propia variable
+}
+
+function drawColours() {
+  const BASIC_COLOR = [
+  color(255, 128, 128), color(255, 255, 128), color(128, 255, 128), color(0, 255, 128),
+  color(128, 255, 255), color(0, 128, 255), color(255, 128, 192), color(255, 128, 255),
+  color(255, 0, 0), color(255, 255, 0), color(128, 255, 0), color(0, 255, 64),
+  color(0, 255, 255), color(0, 128, 192), color(128, 128, 192), color(255, 0, 255),
+  color(128, 64, 64), color(255, 128, 64), color(0, 255, 0), color(0, 128, 128),
+  color(0, 64, 128), color(128, 128, 255), color(128, 0, 64), color(255, 0, 128),
+  color(128, 0, 0), color(255, 128, 0), color(0, 128, 0), color(0, 128, 64),
+  color(0, 0, 255), color(0, 0, 160), color(128, 0, 128), color(128, 0, 255),
+  color(64, 0, 0), color(128, 64, 0), color(0, 64, 0), color(0, 64, 64),
+  color(0, 0, 128), color(0, 0, 64), color(64, 0, 64), color(64, 0, 128),
+  color(0, 0, 0), color(128, 128, 0), color(128, 128, 64), color(128, 128, 128),
+  color(64, 128, 128), color(192, 192, 192), color(64, 0, 64), color(255, 255, 255)
+  ];
+  fill(0);
+  text("Basic colours:", 10, 20);
+  strokeWeight(1);
+  stroke(128);
+  // Dibujo de los colores básicos
+  for (let i = 0; i < 48; i++) {
+    fill(BASIC_COLOR[i]);
+    rect(10 + (i % 8) * 25, 40 + int(i / 8) * 20, 20, 15);
+  }
+  // Dibujo del borde del color básico seleccionado
+  if (BASIC_COLORSeleccionado < 48) {
+    stroke(128);
+    noFill();
+    rect(10 + int(BASIC_COLORSeleccionado % 8) * 25 - 2, 
+         40 + int(BASIC_COLORSeleccionado / 8) * 20 - 2, 
+         24, 19);
+  }
+  // Dibujo de los colores customizados
+  fill(0);
+  text("Custom colours:", 10, 180); 
+  for (let i = 0; i < 16; i++) {
+    fill(customColor[i]);
+    rect(10 + int(i % 8) * 25, 200 + int(i / 8) * 20, 20, 15);
+  }
+  // Dibujo del borde del color customizado seleccionado
+  if (customColorSeleccionado < 16) {
+    stroke(128);
+    noFill();
+    rect(10 + int(customColorSeleccionado % 8) * 25 - 2, 
+         200 + int(customColorSeleccionado / 8) * 20 - 2, 
+         24, 19);
+  }
+  // Botón Define Custom Colours (permite definir un color propio)
+  fill(200);
+  rect(10, 250, 195, 20);
+  textAlign(CENTER, CENTER);
+  if (customColorActivo) fill(128);
+  else fill(0);
+  text("Define Custom Colours>>", 120, 260);
+  // Botones OK y Cancel y Add to Custom Colours
+  fill(200);
+  rect(10, 280, 90, 20);
+  rect(115, 280, 90, 20);
+  fill(0);
+  text("OK", 55, 290);
+  text("Cancel", 160, 290);
+}
+
+function drawColorPicker() {
+  let sliderX = PICKER_X + ANCHO_PICKER + 10;
+  let sliderY = PICKER_Y;
+  let sliderWidth = 10;
+  let inputY = PICKER_Y + 15;
+  let inputWidth = 30;
+  noFill();
+  stroke(128);
+  rect(PICKER_X, PICKER_Y, 180, -180); 
+  // selector de color HS
+  imageMode(CORNER);
+  if (HSLimage) {
+    image(HSLimage, PICKER_X, PICKER_Y - ALTO_PICKER);
+  } 
+  // Círculo que indica la parte seleccionada
+  fill(255);
+  stroke(0);
+  strokeWeight(1);
+  ellipse(PICKER_X + map(hue, 0, 239, 0, ANCHO_PICKER), 
+          PICKER_Y - map(saturation, 0, 240, 0, ALTO_PICKER), 
+          10, 10);
+  // DIBUJO DE LA BARRA DE BRILLO (brightness)
+  noStroke();
+  for (let y = 0; y < ALTO_PICKER; y++) {
+    fill(HSBtoRGB(hue, saturation, map(y, 0, ALTO_PICKER, 0, 240)));
+    rect(sliderX, sliderY - y, sliderWidth, 1);
+  }
+  // Contorno de la barra
+  stroke(0);
+  noFill();
+  rect(sliderX, sliderY, 10, -ALTO_PICKER);
+  // Marcador de brillo
+  let markerY = sliderY - map(getBrightness(currentColor), 0, 240, 0, ALTO_PICKER);
+  stroke(0);
+  strokeWeight(2);
+  line(sliderX - 5, markerY, sliderX + sliderWidth + 5, markerY);
+  fill(0);
+  // DIBUJO DE LOS CAMPOS DE TEXTO
+  strokeWeight(1);
+  textAlign(RIGHT, CENTER);
+  text("Hue:", PICKER_X + 88, inputY);
+  text("Sat:", PICKER_X + 88, inputY + 20);
+  text("Lum:", PICKER_X + 88, inputY + 40);
+  text("Red:", PICKER_X + 168, inputY);
+  text("Green:", PICKER_X + 168, inputY + 20);
+  text("Blue:", PICKER_X + 168, inputY + 40);
+  // Campos de entrada RGB
+  fill(255);
+  stroke(0);
+  rect(PICKER_X + 90, inputY - 10, inputWidth, 20); // R
+  rect(PICKER_X + 90, inputY + 10, inputWidth, 20); // G
+  rect(PICKER_X + 90, inputY + 30, inputWidth, 20); // B
+  // Campos de entrada HSB
+  rect(PICKER_X + 170, inputY - 10, inputWidth, 20); // H
+  rect(PICKER_X + 170, inputY + 10, inputWidth, 20); // S
+  rect(PICKER_X + 170, inputY + 30, inputWidth, 20); // B
+  // Texto en los campos
+  textAlign(LEFT, CENTER);
+  fill(0);
+  text(rgbInputs[0], PICKER_X + 175, inputY);
+  text(rgbInputs[1], PICKER_X + 175, inputY + 20);
+  text(rgbInputs[2], PICKER_X + 175, inputY + 40);
+  text(hsbInputs[0], PICKER_X + 95, inputY);
+  text(hsbInputs[1], PICKER_X + 95, inputY + 20);
+  text(hsbInputs[2], PICKER_X + 95, inputY + 40);
+  // Botón Add to Custom Colours
+  fill(200);
+  rect(PICKER_X, 280, ANCHO_PICKER + 20, 20);
+  fill(0);
+  textAlign(CENTER, CENTER);
+  text("Add to Custom Colours", PICKER_X + ANCHO_PICKER / 2, 290);
+  // DIBUJA EL COLOR SELECCIONADO
+  noStroke();
+  // Cambia por:
+  fill(colorValido(currentColor));
+  //fill(currentColor);
+  rect(PICKER_X, PICKER_Y + 10, 50, 40);
+}
+
+function updateColor() {
+  rgbInputs[0] = str(int(red(currentColor)));
+  rgbInputs[1] = str(int(green(currentColor)));
+  rgbInputs[2] = str(int(blue(currentColor)));
+  hsbInputs[0] = str(int(getHue(currentColor)));
+  hsbInputs[1] = str(int(getSaturation(currentColor)));
+  hsbInputs[2] = str(int(getBrightness(currentColor)));
+}
+
+function colorValido(c) {
+  try {
+    // Si ya es válido, usarlo
+    let test = red(c);
+    if (!isNaN(test)) return c;
+  } catch (e) {
+    // Si falla, crear uno nuevo
+  }
+  
+  // Si currentColor es array [h,s,b]
+  if (Array.isArray(c) && c.length >= 3) {
+    return HSBtoRGB(c[0], c[1], c[2]);
+  }
+  
+  // Si currentColor es array [r,g,b]
+  if (Array.isArray(c) && c.length >= 3) {
+    return color(c[0], c[1], c[2]);
+  }
+  
+  // Por defecto
+  return color(255, 255, 255);
+}
+
+function extraerRGB(c) {
+  if (!c) return {r:0, g:0, b:0};
+  try {
+    if (Array.isArray(c) && c.length >= 3) return {r:c[0], g:c[1], b:c[2]};
+    if (c.r !== undefined) return {r:c.r, g:c.g, b:c.b};
+    if (typeof red === 'function') return {r:red(c), g:green(c), b:blue(c)};
+    return {r:0, g:0, b:0};
+  } catch(e) {
+    return {r:0, g:0, b:0};
+  }
+}
+
+function RGBtoHSB(r, g, b) {
+  r = constrain(r, 0, 255)/255;
+  g = constrain(g, 0, 255)/255;
+  b = constrain(b, 0, 255)/255;
+  let maxVal = max(r, g, b);
+  let minVal = min(r, g, b);
+  let delta = maxVal - minVal;
+  let h = 0;
+  if (delta !== 0) {
+    if (maxVal === r) h = ((g - b)/delta) % 6;
+    else if (maxVal === g) h = (b - r)/delta + 2;
+    else h = (r - g)/delta + 4;
+    h = (h * 60 + 360) % 360;
+  }
+  let bCrumble = (maxVal + minVal)/2.0;
+  let sCrumble = delta !== 0 ? delta/(1 - abs(2 * bCrumble - 1)) : 0;
+  return [map(h, 0, 360, 0, 239), sCrumble * 240, bCrumble * 240];
+}
+
+function HSBtoRGB(h, s, b) {
+  // Asegurar valores válidos
+  h = constrain(h, 0, 239);
+  s = constrain(s, 0, 240);
+  b = constrain(b, 0, 240);
+  
+  let hNorm = (h % 240)/239.0 * 360.0;
+  let sNorm = s/240.0;
+  let bNorm = b/240.0;
+  
+  let c = (1 - Math.abs(2 * bNorm - 1)) * sNorm;
+  let x = c * (1 - Math.abs((hNorm/60) % 2 - 1));
+  let m = bNorm - c/2;
+  
+  let r, g, bVal;
+  if (hNorm < 60) { r = c; g = x; bVal = 0; }
+  else if (hNorm < 120) { r = x; g = c; bVal = 0; }
+  else if (hNorm < 180) { r = 0; g = c; bVal = x; }
+  else if (hNorm < 240) { r = 0; g = x; bVal = c; }
+  else if (hNorm < 300) { r = x; g = 0; bVal = c; }
+  else { r = c; g = 0; bVal = x; }
+  
+  // DEVOLVER OBJETO COLOR DE P5.JS CORRECTAMENTE
+  return color(
+    Math.round(constrain((r + m) * 255, 0, 255)),
+    Math.round(constrain((g + m) * 255, 0, 255)),
+    Math.round(constrain((bVal + m) * 255, 0, 255))
+  );
+}
+
+function colorAHex(c) {
+  let rgb = extraerRGB(c);
+  return "#" + hex(rgb.r, 2) + hex(rgb.g, 2) + hex(rgb.b, 2);
+}
+
+function getBrightness(c) {
+  let rgb = extraerRGB(c);
+  let hsb = RGBtoHSB(rgb.r, rgb.g, rgb.b);
+  return hsb[2];
+}
+
+function getHue(c) {
+  let rgb = extraerRGB(c);
+  let hsb = RGBtoHSB(rgb.r, rgb.g, rgb.b);
+  return hsb[0];
+}
+
+function getSaturation(c) {
+  let rgb = extraerRGB(c);
+  let hsb = RGBtoHSB(rgb.r, rgb.g, rgb.b);
+  return hsb[1];
+}
+
+function calcularEscala() {
+  const anchoActual = window.innerWidth;
+  const altoActual = window.innerHeight;
+  const escalaX = anchoActual / 1366;
+  const escalaY = altoActual / 768;
+  // Tomamos la escala más pequeña para que todo quepa en pantalla
+  const escala = Math.min(escalaX, escalaY);
+  return escala;
+}
+
+function deshabilitarGestosMóviles() {
+  let canvas = document.querySelector('canvas');
+  if (!canvas) return;
+  
+  // Configurar solo para el canvas, NO para toda la pantalla
+  canvas.style.touchAction = 'none';
+  canvas.style.webkitTouchCallout = 'none';
+  canvas.style.userSelect = 'none';
+  
+  // Prevenir gestos solo en el canvas, no interferir con el menú
+  canvas.addEventListener('touchstart', function(e) {
+    // Solo prevenir si el target es el canvas o si hay múltiples toques
+    if (e.target === canvas && e.touches.length > 1) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+  
+  canvas.addEventListener('touchmove', function(e) {
+    // Solo prevenir si el target es el canvas
+    if (e.target === canvas) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+}
+
+function habilitarMenuTactil() {
+  console.log('Habilitando menú táctil...');
+  const menu = document.getElementById('menu-bar');
+  if (!menu) {
+    console.error('No se encontró el menú');
+    return;
+  }
+  
+  // Configurar el menú para recibir eventos táctiles
+  menu.style.touchAction = 'auto';
+  menu.style.pointerEvents = 'auto';
+  menu.style.zIndex = '1000';
+  
+  // LIMPIAR todos los onclick de HTML y añadir event listeners
+  const menuButtons = document.querySelectorAll('.menu-button');
+  console.log('Procesando botones:', menuButtons.length);
+  
+  menuButtons.forEach((button, index) => {
+    // Guardar el texto del botón para saber qué menú abrir
+    const buttonText = button.textContent.trim();
+    console.log(`Configurando botón ${index}: "${buttonText}"`);
+    
+    // Eliminar onclick del HTML
+    button.removeAttribute('onclick');
+    
+    // Determinar qué menú debe abrir
+    let menuId = '';
+    if (buttonText.includes('Archivo')) {
+      menuId = 'archivo-menu';
+    } else if (buttonText.includes('Configuración')) {
+      menuId = 'config-menu';
+    }
+    
+    // Añadir event listeners
+    button.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Touchstart en botón:', buttonText);
+      toggleMenu(menuId);
+      return false;
+    }, { passive: false });
+    
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Click en botón:', buttonText);
+      toggleMenu(menuId);
+    });
+    
+    // Feedback visual al tocar
+    button.addEventListener('touchstart', function() {
+      this.style.backgroundColor = '#3a3d41';
+    }, { passive: true });
+    
+    button.addEventListener('touchend', function() {
+      this.style.backgroundColor = '';
+    }, { passive: true });
+    
+    button.addEventListener('touchcancel', function() {
+      this.style.backgroundColor = '';
+    }, { passive: true });
+  });
+  
+  // Procesar items del dropdown
+  setTimeout(() => {
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    console.log('Procesando items dropdown:', dropdownItems.length);
+    
+    dropdownItems.forEach((item, index) => {
+      // Guardar el onclick original
+      const originalOnClick = item.getAttribute('onclick');
+      if (originalOnClick) {
+        console.log(`Item ${index}: "${item.textContent.trim()}" -> ${originalOnClick}`);
+        
+        // Eliminar onclick del HTML
+        item.removeAttribute('onclick');
+        
+        // Añadir event listeners
+        item.addEventListener('touchstart', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log('Touchstart en item:', this.textContent.trim());
+          
+          // Ejecutar la función original
+          ejecutarFuncionDesdeString(originalOnClick);
+          
+          // Cerrar todos los menús después de un pequeño delay
+          setTimeout(cerrarTodosMenus, 100);
+          return false;
+        }, { passive: false });
+        
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log('Click en item:', this.textContent.trim());
+          ejecutarFuncionDesdeString(originalOnClick);
+          setTimeout(cerrarTodosMenus, 100);
+        });
+        
+        // Feedback visual
+        item.addEventListener('touchstart', function() {
+          this.style.backgroundColor = '#3a3d41';
+        }, { passive: true });
+        
+        item.addEventListener('touchend', function() {
+          this.style.backgroundColor = '';
+        }, { passive: true });
+      }
+    });
+  }, 200); // Pequeño delay para asegurar que los dropdowns existen
+}
+
+// Función auxiliar para ejecutar funciones desde string
+function ejecutarFuncionDesdeString(funcString) {
+  console.log('Ejecutando:', funcString);
+  try {
+    // Manejar casos especiales
+    if (funcString.includes('toggleBarrerasLaterales')) {
+      if (typeof toggleBarrerasLaterales === 'function') {
+        toggleBarrerasLaterales();
+      }
+    } else if (funcString.includes('setModoVisualizacion')) {
+      const match = funcString.match(/'([^']+)'/);
+      if (match && typeof setModoVisualizacion === 'function') {
+        setModoVisualizacion(match[1]);
+      }
+    } else {
+      // Evaluar la función de forma segura
+      const func = new Function('return ' + funcString.replace(/^.*?\(/, 'function(').replace(/\)$/, ')'));
+      func().call(window);
+    }
+  } catch (e) {
+    console.error('Error ejecutando función:', e, 'String:', funcString);
+  }
+}
+
+// Función auxiliar para ejecutar funciones desde string
+function ejecutarFuncionDesdeString(funcString) {
+  try {
+    // Extraer el nombre de la función y sus argumentos
+    const match = funcString.match(/([^(]+)\(([^)]*)\)/);
+    if (match) {
+      const funcName = match[1].trim();
+      const args = match[2].split(',').map(arg => 
+        arg.trim().replace(/['"]/g, '')
+      ).filter(arg => arg);
+      
+      if (typeof window[funcName] === 'function') {
+        window[funcName](...args);
+      }
+    }
+  } catch (e) {
+    console.error('Error ejecutando función:', e);
+  }
+}
+
+function comprobarBuzzer() {
+  if (elemento[3].conectorElemento != null) {
+    let otroConector = elemento[3].conectorElemento.jumperAsociado.devolverOtroExtremo(elemento[3].conectorElemento);
+    if (otroConector && otroConector.gpioConectado != null) {
+      let letraAsociada = otroConector.gpioConectado.letraAsociada;
+      let valor = max(letraAsociada.valorOutput, letraAsociada.valorLetra);
+      if (valor > 127) {
+        osc.amp(0.5);
+        return true;
+      } else if (valor < 128) {
+        osc.amp(0);
+        return false;
+      }  
+    }
+  }
+  // ❌ Falta un return si no se cumple ninguna condición
+  return false; // AÑADE esto
+}
+
+//Centra el código en la pantalla
+function centrarCodigo() {
+  for (let bloque of codigo) {  // ❌ Este primer bucle sobra
+    let sumaX = 0;
+    let sumaY = 0;
+    let total = codigo.length;
+    for (let bloque of codigo) {  // ✅ Este es el correcto
+      sumaX += bloque.x;
+      sumaY += bloque.y;
+    }
+    // 2️⃣ Calcular la media
+    let mediaX = sumaX / total;
+    let mediaY = sumaY / total;
+    // 3️⃣ Desplazar todos los bloques
+    for (let bloque of codigo) {
+      bloque.x -= mediaX;
+      bloque.y -= mediaY;
+    } 
+  } // ❌ Esta llave cierra el primer for que sobra
+  panCodigoX=0;
+  panCodigoY=0;
+}
+
+// ✅ Versión corregida:
+function centrarCodigo() {
+  if (codigo.length === 0) return;
+  
+  let sumaX = 0;
+  let sumaY = 0;
+  
+  for (let bloque of codigo) {
+    sumaX += bloque.x;
+    sumaY += bloque.y;
+  }
+  
+  let mediaX = sumaX / codigo.length;
+  let mediaY = sumaY / codigo.length;
+  
+  for (let bloque of codigo) {
+    bloque.x -= mediaX;
+    bloque.y -= mediaY;
+  }
+  
+  panCodigoX = 0;
+  panCodigoY = 0;
+}
+
